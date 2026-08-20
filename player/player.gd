@@ -6,15 +6,18 @@ const BASE_SPEED = 5.0
 const SPRINT_SPEED_MULTIPLIER = 2.0
 const JUMP_VELOCITY = 4.5
 
-
+var current_gun = null
+var bullet = load("res://bullet.tscn")
+var instance
 var _gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var _last_step_location := Vector3.ZERO
-
+@onready var gun_holder = $GunHolder
 @onready var _mouse_sensitivity := 0.15 / (get_viewport().get_visible_rect().size.x/1152.0)
 @onready var _cam := $Camera3D
 @onready var _step_sound: AudioStreamPlayer = $StepSound
 @onready var flashlight = $Camera3D/SpotLight3D
-
+@onready var gun_anim = $gunholder/AnimationPlayer
+@onready var gun_barrel = $gunholder/RayCast3D
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_last_step_location = Vector3(global_position.x, 0.0, global_position.z)
@@ -46,9 +49,26 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, BASE_SPEED)
 		velocity.z = move_toward(velocity.z, 0, BASE_SPEED)
-
+	if Input.is_action_pressed("shoot"):
+		if !gun_anim.is_playing():
+			gun_anim.play("shoot")
+			instance = bullet.instantiate()
+			instance.position = gun_barrel.global_position
+			instance.transform.basis = gun_barrel.global_transform.basis
+			get_parent().add_child(instance)
 	move_and_slide()
+	
+func pickup_gun(gun):
+	if current_gun:
+		return
 
+
+	current_gun = gun
+
+	gun.get_parent().remove_child(gun)
+	gun_holder.add_child(gun)
+
+	gun.transform = Transform3D.IDENTITY
 
 func _input(event):
 	if event is InputEventMouseMotion:

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dtb7gx3wgqwrf" path="res://player/player.gd" id="2_10sax"]
 [ext_resource type="AudioStream" uid="uid://b7dtejfcwpps4" path="res://sounds/138476__justinvoke__steptap.wav" id="2_ncqi0"]
+[ext_resource type="PackedScene" uid="uid://dcw8afj1l3fus" path="res://gun/low-poly_kimber_k6s.glb" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bbutj"]
 
@@ -10,6 +11,44 @@ random_pitch = 1.2
 random_volume_offset_db = 4.0
 streams_count = 1
 stream_0/stream = ExtResource("2_ncqi0")
+
+[sub_resource type="Animation" id="Animation_g1dw6"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_Scene:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.5632286, 0.3738413, -0.60137767)]
+}
+
+[sub_resource type="Animation" id="Animation_yw30f"]
+resource_name = "shoot"
+length = 0.1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_Scene:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.009999998, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0.5632286, 0.3738413, -0.60137767), Vector3(0.563, 0.374, -0.5), Vector3(0.5632286, 0.3738413, -0.60137767)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qjkh3"]
+_data = {
+&"RESET": SubResource("Animation_g1dw6"),
+&"shoot": SubResource("Animation_yw30f")
+}
 
 [node name="Player" type="CharacterBody3D" unique_id=533385784 groups=["player"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
@@ -30,3 +69,32 @@ spot_angle = 29.6482
 [node name="StepSound" type="AudioStreamPlayer" parent="." unique_id=1650116083]
 stream = SubResource("AudioStreamRandomizer_n1j3r")
 volume_db = -10.0
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=748506840]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2101655500]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -1.5
+offset_top = -1.5
+offset_right = 1.5
+offset_bottom = 1.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+
+[node name="gunholder" type="Node3D" parent="." unique_id=962866259]
+
+[node name="Sketchfab_Scene" parent="gunholder" unique_id=1347172798 instance=ExtResource("3_g1dw6")]
+transform = Transform3D(0.0019459168, 0, 0.09998106, 0, 0.1, 0, -0.09998106, 0, 0.0019459168, 0.5632286, 0.3738413, -0.60137767)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="gunholder" unique_id=242024925]
+libraries/ = SubResource("AnimationLibrary_qjkh3")
+
+[node name="RayCast3D" type="RayCast3D" parent="gunholder" unique_id=1360814891]
+transform = Transform3D(1, 0, 0, 0, 0.9996573, 0.026176948, 0, -0.026176948, 0.9996573, 0.57210183, 0.46717727, -0.8422102)
+target_position = Vector3(0, -1, -0.6)

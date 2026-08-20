@@ -7,7 +7,7 @@ signal reached_player
 
 var _current_speed := 0.0
 
-
+var health = 1 
 @onready var navigation_agent: NavigationAgent3D = %NavigationAgent3D
 @onready var animation_player: AnimationPlayer = get_node("EnemyModel/AnimationPlayer")
 @onready var player: Player = get_tree().get_first_node_in_group("player")

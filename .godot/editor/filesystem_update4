@@ -1,13 +1,8 @@
-res://Menus and ui/main_menu.gd
 res://player/player.tscn
+res://gunonground.tscn
+res://gunonground.gd
 res://player/player.gd
-res://options.tscn
-res://main_menu.gd
-res://game_over/game_over.gd
-res://credits.gd
-res://controls.gd
-res://options.gd
-res://sadist.tscn
+res://enemy/enemy.tscn
 res://enemy/enemy.gd
-res://enemy/states/enemy_state.gd
-res://enemy/states/state_chasing.gd
+res://bullet.tscn
+res://bullet.gd
