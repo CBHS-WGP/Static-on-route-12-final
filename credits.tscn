@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://kr7rymoh50ij"]
+
+[ext_resource type="Script" uid="uid://vb33rpyqgvgm" path="res://Leo/credits.gd" id="1_4lcli"]
+[ext_resource type="Texture2D" uid="uid://da745xb4pgnhe" path="res://Gas station.jpg" id="2_mwlco"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hkejs"]
+
+[node name="Credits" type="Node2D" unique_id=1405947781]
+script = ExtResource("1_4lcli")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=643140961]
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = ExtResource("2_mwlco")
+expand_mode = 1
+
+[node name="Credits" type="Control" parent="." unique_id=1094719856]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Back" type="Button" parent="Credits" unique_id=625538214]
+layout_mode = 0
+offset_left = -89.0
+offset_top = 213.0
+offset_right = 171.0
+offset_bottom = 257.0
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hkejs")
+text = "Back"
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=2052571296]
+offset_left = 73.0
+offset_top = 436.0
+offset_right = 435.0
+offset_bottom = 584.0
+
+[node name="Label" type="Label" parent="." unique_id=2096375799]
+offset_left = 61.0
+offset_top = 44.0
+offset_right = 1102.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 66
+text = "Ｓｔａｔｉｃ ｏｎ Ｒｏｕｔｅ １２"
+
+[connection signal="pressed" from="Credits/Back" to="." method="_on_back_pressed"]

@@ -2,29 +2,28 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhoprwfqxgvyn"
-path.s3tc="res://.godot/imported/Grass_albedo_height.png-35f7bc0a284baf7aa10cf12db36c4491.s3tc.ctex"
+uid="uid://da745xb4pgnhe"
+path="res://.godot/imported/Gas station.jpg-05dbf45f7925faa42f554bee66acb3a8.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cohen/Textures/Grass_albedo_height.png"
-dest_files=["res://.godot/imported/Grass_albedo_height.png-35f7bc0a284baf7aa10cf12db36c4491.s3tc.ctex"]
+source_file="res://Gas station.jpg"
+dest_files=["res://.godot/imported/Gas station.jpg-05dbf45f7925faa42f554bee66acb3a8.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=2
+compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

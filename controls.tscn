@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://dylv3wpcb3xug"]
+
+[ext_resource type="Script" uid="uid://dqjbcayqoiiaf" path="res://Leo/controls.gd" id="1_elaq2"]
+[ext_resource type="Texture2D" uid="uid://da745xb4pgnhe" path="res://Gas station.jpg" id="2_n5wro"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6whpu"]
+
+[node name="Controls" type="Node2D" unique_id=1925992905]
+script = ExtResource("1_elaq2")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=383990477]
+offset_right = 1151.0
+offset_bottom = 646.0
+texture = ExtResource("2_n5wro")
+expand_mode = 1
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=1371572530]
+offset_left = 86.0
+offset_top = 419.0
+offset_right = 448.0
+offset_bottom = 567.0
+
+[node name="Label" type="Label" parent="." unique_id=784894941]
+offset_left = 61.0
+offset_top = 44.0
+offset_right = 1102.0
+offset_bottom = 300.0
+theme_override_font_sizes/font_size = 66
+text = "Ｓｔａｔｉｃ ｏｎ Ｒｏｕｔｅ １２"
+
+[node name="Control" type="Control" parent="." unique_id=460743735]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Back" type="Button" parent="Control" unique_id=9249684]
+layout_mode = 0
+offset_left = -90.0
+offset_top = 215.0
+offset_right = 170.0
+offset_bottom = 259.0
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6whpu")
+text = "Back"
+
+[connection signal="pressed" from="Control/Back" to="." method="_on_back_pressed"]

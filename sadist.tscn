@@ -4,8 +4,7 @@
 
 [node name="Sadist" unique_id=319262330 instance=ExtResource("1_mqcv6")]
 
-[node name="Skeleton3D" parent="." index="0" unique_id=2102649173]
-bones/4/position = Vector3(-0.0069947, 0.87889147, 0.001135427)
+[node name="Skeleton3D" parent="." index="0" unique_id=86408667]
 bones/4/rotation = Quaternion(-0.018368224, 0.09934061, -0.025826447, 0.9945487)
 bones/5/rotation = Quaternion(0.035304926, 0.0056652143, 0.008875237, 0.9993211)
 bones/6/rotation = Quaternion(0.11307905, 0.011481849, 0.02027501, 0.9933128)

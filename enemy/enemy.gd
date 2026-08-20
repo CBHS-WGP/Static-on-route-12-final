@@ -23,7 +23,7 @@ func _ready() -> void:
 
 func _physics_process(_delta: float) -> void:
 	if navigation_agent.is_navigation_finished():
-		animation_player.play("Take 001", 0.2)
+		animation_player.play("mixamo_com", 0.2)
 		return
 	
 	var next_path_position := navigation_agent.get_next_path_position()
@@ -31,8 +31,7 @@ func _physics_process(_delta: float) -> void:
 	var where_to_look := next_path_position
 	where_to_look.y = global_position.y
 	if not where_to_look.is_equal_approx(global_position):
-		# if you want interpolation, look into quaternions and slerp()
-		# I'm just using look_at for simplicity
+		
 		look_at(where_to_look)
 	
 	var direction := next_path_position - global_position
@@ -47,9 +46,9 @@ func travel_to_position(wanted_position: Vector3, speed: float, play_run_anim :=
 	_current_speed = speed
 	
 	if play_run_anim:
-		animation_player.play("mixamo_com", 0.2)
+		animation_player.play("mixamo_com", 0.1)
 	else:
-		animation_player.play("Take 001", 0.2)
+		animation_player.play("mixamo_com", 0.3)
 
 
 func is_player_in_view() -> bool:

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bbothwc8tg0co"]
+
+[ext_resource type="PackedScene" uid="uid://bhuwxhhl14bdy" path="res://Leo/Enemy/Sadist/Sadist.FBX" id="1_8hmt3"]
+
+[node name="Enemy" type="Node3D" unique_id=141759176]
+
+[node name="Sadist" parent="." unique_id=2121313356 instance=ExtResource("1_8hmt3")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -9.113533, 0, 6.594022)
