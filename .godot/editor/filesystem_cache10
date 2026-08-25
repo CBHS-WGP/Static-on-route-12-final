@@ -1,6 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1787264118
+::res://::1787617568
 138476__justinvoke__steptap.wav::AudioStreamWAV::5540744533804715282::1787174347::1787174480::1::::<><><>0<>0<>895f05c032bfd934c2d62dc417c418aa<>res://.godot/imported/138476__justinvoke__steptap.wav-49b315cd0ef94dc8bfff901e91c93acb.sample::
+bullet.gd::GDScript::4699573895923536992::1787266751::0::1::::<>Node3D<><>0<>0<><>::
+bullet.tscn::PackedScene::5033009943324348875::1787266524::0::1::::<><><>0<>0<><>::uid://b77rkbsl3jpfs::::res://bullet.gd
 center_dot.gd::GDScript::6662448821565297614::1787174347::0::1::::<>Control<><>0<>0<><>::
 controls.gd::GDScript::8300927275476240709::1787175099::0::1::::<>Node2D<><>0<>0<><>::
 controls.tscn::PackedScene::8867828691543275130::1787174347::0::1::::<><><>0<>0<><>::uid://dqjbcayqoiiaf::::res://Leo/controls.gd<>uid://da745xb4pgnhe::::res://Gas station.jpg
@@ -9,6 +11,8 @@ credits.tscn::PackedScene::738957440208965149::1787174347::0::1::::<><><>0<>0<><
 enemy.tscn::PackedScene::2486678099436203574::1787174347::0::1::::<><><>0<>0<><>::uid://bhuwxhhl14bdy::::res://Leo/Enemy/Sadist/Sadist.FBX
 fpc.gd::GDScript::1605665740362868525::1787174347::0::1::::<>Node3D<><>0<>0<><>::
 Gas station.jpg::CompressedTexture2D::7227137716736371494::1787174452::1787174480::1::::<><><>0<>0<>139dcaba33d6f8e92ed51177b5a5238b<>res://.godot/imported/Gas station.jpg-05dbf45f7925faa42f554bee66acb3a8.ctex::
+gunonground.gd::GDScript::2683398767198775422::1787264488::0::1::::<>Area3D<><>0<>0<><>::
+gunonground.tscn::PackedScene::2456783722493045648::1787264685::0::1::::<><><>0<>0<><>::uid://beh4gkuv3idrq::::res://gunonground.gd<>uid://dcw8afj1l3fus::::res://gun/low-poly_kimber_k6s.glb
 main_menu.gd::GDScript::1620107299714173514::1787175132::0::1::::<>Node2D<><>0<>0<><>::
 main_menu.tscn::PackedScene::5999799551705329549::1787174347::0::1::::<><><>0<>0<><>::uid://c5msc5d3pv6po::::res://main_menu.gd<>uid://da745xb4pgnhe::::res://Gas station.jpg
 options.gd::GDScript::1698014895100579793::1787175099::0::1::::<>Node2D<><>0<>0<><>::
@@ -102,9 +106,9 @@ texture_10.png::CompressedTexture2D::3004559098633697476::1779312674::1779312718
 texture_11.png::CompressedTexture2D::7540253894522268636::1779312674::1779312718::1::::<><><>0<>0<>c2f295d01e3d5d36b4a1b74f90ae991a<>res://.godot/imported/texture_11.png-44ab559d4c1ab996ce064426a9e01b38.ctex::
 texture_12.png::CompressedTexture2D::7229174774272442546::1779312674::1779312718::1::::<><><>0<>0<>4cc1d04dc0f26f51fac25c64987d2cd6<>res://.godot/imported/texture_12.png-6af19821abb02cb29bb6ed24ee4670e0.ctex::
 texture_13.png::CompressedTexture2D::2880930623498070251::1779312674::1779312718::1::::<><><>0<>0<>3288ff5c0473b9ca66fde7d229af2105<>res://.godot/imported/texture_13.png-891332ffbf32d9b94212aaf3a11a15a9.ctex::
-::res://enemy/::1787175786
-enemy.gd::GDScript::1212339772749075659::1787175786::0::1::::Enemy<>CharacterBody3D<><>0<>0<><>::
-enemy.tscn::PackedScene::5496715463242434029::1786319824::0::1::::<><><>0<>0<><>::uid://rjjcaejd33x4::::res://enemy/enemy.gd<>uid://dkc1man884b1s::::res://state_machine/state_machine.gd<>uid://dj47v7mi7b7bi::::res://sounds/678714__kinniekindaceline__foot-step.wav<>uid://cufyc2iafiskx::::res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_mask_diffuse.tga<>uid://biwiamm27ebp6::::res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga<>uid://bun1hc2m6hugd::::res://enemy/states/state_roaming.gd<>uid://4illq10xs5wy::::res://enemy/states/state_chasing.gd<>uid://yutor1mh34ol::::res://enemy/model/sadist/source/Sadist/Sadist/textures/body_diffuse.tga<>uid://ced86kvtn7gd2::::res://enemy/model/sadist/source/Sadist/Sadist/textures/eyes_diffuse.tga<>uid://8p0w6bh31y7f::::res://enemy/states/state_searching.gd
+::res://enemy/::1787264738
+enemy.gd::GDScript::1212339772749075659::1787264738::0::1::::Enemy<>CharacterBody3D<><>0<>0<><>::
+enemy.tscn::PackedScene::5496715463242434029::1787264737::0::1::::<><><>0<>0<><>::uid://rjjcaejd33x4::::res://enemy/enemy.gd<>uid://dkc1man884b1s::::res://state_machine/state_machine.gd<>uid://dj47v7mi7b7bi::::res://sounds/678714__kinniekindaceline__foot-step.wav<>uid://cufyc2iafiskx::::res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_mask_diffuse.tga<>uid://biwiamm27ebp6::::res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga<>uid://bun1hc2m6hugd::::res://enemy/states/state_roaming.gd<>uid://4illq10xs5wy::::res://enemy/states/state_chasing.gd<>uid://yutor1mh34ol::::res://enemy/model/sadist/source/Sadist/Sadist/textures/body_diffuse.tga<>uid://ced86kvtn7gd2::::res://enemy/model/sadist/source/Sadist/Sadist/textures/eyes_diffuse.tga<>uid://8p0w6bh31y7f::::res://enemy/states/state_searching.gd
 ::res://enemy/model/::1787014214
 enemy_material.tres::StandardMaterial3D::2529247106764522158::1779312674::0::1::::<><><>0<>0<><>::
 run_anim.res::Animation::137310254219965636::1779312720::0::1::::<><><>0<>0<><>::
@@ -149,9 +153,9 @@ dark.tres::StandardMaterial3D::7259673780383184866::1779312674::0::1::::<><><>0<
 level.glb::PackedScene::6984903666690050080::1779312674::1779312721::1::::<><><>0<>0<>d08687719c870087287ff182b7a595b8<>res://.godot/imported/level.glb-e28bc057b9b971c8369d0b9f0a77a406.scn::uid://dbov1cc7v2tos::::res://level/model/dark.tres<>uid://m2h6edjjaadh::::res://level/model/orange.tres
 orange.tres::StandardMaterial3D::898484916725179357::1779312674::0::1::::<><><>0<>0<><>::uid://0kv326qulf7o::::res://addons/kenney_prototype_textures/orange/texture_01.png
 ::res://Menus and ui/::1787174480
-::res://player/::1787263965
-player.gd::GDScript::8496869368787763647::1787175564::0::1::::Player<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::7516958223222279695::1787263965::0::1::::<><><>0<>0<><>::uid://dtb7gx3wgqwrf::::res://player/player.gd<>uid://b7dtejfcwpps4::::res://sounds/138476__justinvoke__steptap.wav
+::res://player/::1787266793
+player.gd::GDScript::8496869368787763647::1787266280::0::1::::Player<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::7516958223222279695::1787266793::0::1::::<><><>0<>0<><>::uid://dtb7gx3wgqwrf::::res://player/player.gd<>uid://b7dtejfcwpps4::::res://sounds/138476__justinvoke__steptap.wav<>uid://dcw8afj1l3fus::::res://gun/low-poly_kimber_k6s.glb
 ::res://sounds/::1787014215
 138476__justinvoke__steptap.wav::AudioStreamWAV::4639818059965550229::1779312674::1779312720::1::::<><><>0<>0<>149de7363a88a9a024fadd77a556b329<>res://.godot/imported/138476__justinvoke__steptap.wav-a03aaca000e560d760d469253921e6b7.sample::
 678714__kinniekindaceline__foot-step.wav::AudioStreamWAV::7852810743821037874::1779312674::1779312720::1::::<><><>0<>0<>8b4186fd379712c6bcf35b23fe60fdba<>res://.godot/imported/678714__kinniekindaceline__foot-step.wav-a2daaff25605c3375725b38f18d2549f.sample::

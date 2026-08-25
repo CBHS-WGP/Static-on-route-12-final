@@ -18,6 +18,8 @@ var _last_step_location := Vector3.ZERO
 @onready var flashlight = $Camera3D/SpotLight3D
 @onready var gun_anim = $gunholder/AnimationPlayer
 @onready var gun_barrel = $gunholder/RayCast3D
+@onready var Gunshot: AudioStreamPlayer3D = $gunholder/Gunshot
+@onready var Shootcooldown: Timer = $gunholder/Shootcooldown
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_last_step_location = Vector3(global_position.x, 0.0, global_position.z)
@@ -49,7 +51,9 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, BASE_SPEED)
 		velocity.z = move_toward(velocity.z, 0, BASE_SPEED)
-	if Input.is_action_pressed("shoot"):
+	if Input.is_action_pressed("shoot") and Shootcooldown.is_stopped():
+		Shootcooldown.start()
+		Gunshot.play()
 		if !gun_anim.is_playing():
 			gun_anim.play("shoot")
 			instance = bullet.instantiate()
