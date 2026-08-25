@@ -1,0 +1,7 @@
+res://enemy/enemy.tscn
+res://enemy/skeleton_3d.gd
+res://enemy/enemy.gd
+res://bullet.tscn
+res://bullet.gd
+res://player/player.tscn
+res://player/player.gd

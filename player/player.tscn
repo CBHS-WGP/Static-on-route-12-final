@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dtb7gx3wgqwrf" path="res://player/player.gd" id="2_10sax"]
 [ext_resource type="AudioStream" uid="uid://b7dtejfcwpps4" path="res://sounds/138476__justinvoke__steptap.wav" id="2_ncqi0"]
 [ext_resource type="PackedScene" uid="uid://dcw8afj1l3fus" path="res://gun/low-poly_kimber_k6s.glb" id="3_g1dw6"]
+[ext_resource type="AudioStream" uid="uid://dneii2f72gfpn" path="res://gun/u_62htdrvg4y-gun-shot-359196.mp3" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bbutj"]
 
@@ -98,3 +99,10 @@ libraries/ = SubResource("AnimationLibrary_qjkh3")
 [node name="RayCast3D" type="RayCast3D" parent="gunholder" unique_id=1360814891]
 transform = Transform3D(1, 0, 0, 0, 0.9996573, 0.026176948, 0, -0.026176948, 0.9996573, 0.57210183, 0.46717727, -0.8422102)
 target_position = Vector3(0, -1, -0.6)
+
+[node name="Gunshot" type="AudioStreamPlayer3D" parent="gunholder" unique_id=392515154]
+stream = ExtResource("4_yw30f")
+volume_db = -5.981
+
+[node name="Shootcooldown" type="Timer" parent="gunholder" unique_id=563014992]
+one_shot = true

@@ -2,12 +2,14 @@ extends CharacterBody3D
 class_name Enemy
 
 signal reached_player
+@export var damage = 1
+signal body_part_hit(dam)
 
 @export var max_spotting_distance := 50.0
 
 var _current_speed := 0.0
 
-var health = 1 
+var health = 6
 @onready var navigation_agent: NavigationAgent3D = %NavigationAgent3D
 @onready var animation_player: AnimationPlayer = get_node("EnemyModel/AnimationPlayer")
 @onready var player: Player = get_tree().get_first_node_in_group("player")
@@ -69,3 +71,13 @@ func is_line_of_sight_broken() -> bool:
 	_eye_ray_cast.target_position = _eye_ray_cast.to_local(player.global_position)
 	_eye_ray_cast.force_raycast_update()
 	return _eye_ray_cast.is_colliding()
+
+
+func _on_skeleton_3d_body_part_hit(dam: Variant) -> void:
+	health -= dam
+	if health <=0:
+		queue_free()
+
+func hit(dam: Variant) -> void:
+	emit_signal("body_part_hit", dam)	
+	queue_free()

@@ -1,0 +1,10 @@
+Timer
+AudioStreamPlayer3D
+RayCast3D
+MeshInstance3D
+AnimationPlayer
+CollisionShape3D
+Area3D
+Node3D
+ColorRect
+CanvasLayer

@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dkc1man884b1s" path="res://state_machine/state_machine.gd" id="2_1h0du"]
 [ext_resource type="AudioStream" uid="uid://dj47v7mi7b7bi" path="res://sounds/678714__kinniekindaceline__foot-step.wav" id="2_m542x"]
 [ext_resource type="Texture2D" uid="uid://cufyc2iafiskx" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_mask_diffuse.tga" id="3_78jik"]
+[ext_resource type="Script" uid="uid://b7wcq58juaixm" path="res://enemy/skeleton_3d.gd" id="3_o3pv7"]
 [ext_resource type="Texture2D" uid="uid://biwiamm27ebp6" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga" id="4_o3pv7"]
 [ext_resource type="Script" uid="uid://bun1hc2m6hugd" path="res://enemy/states/state_roaming.gd" id="4_s81n7"]
 [ext_resource type="Script" uid="uid://4illq10xs5wy" path="res://enemy/states/state_chasing.gd" id="5_gc7sf"]
@@ -1099,20 +1100,20 @@ _data = {
 &"mixamo_com": SubResource("Animation_pcetj")
 }
 
-[node name="Enemy" type="CharacterBody3D" unique_id=752862460 groups=["enemy"]]
+[node name="Enemy" type="CharacterBody3D" unique_id=752862460 groups=["enemy", "skeleton"]]
 script = ExtResource("1_5anih")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=266648197]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=266648197 groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.01, 0)
 shape = SubResource("CylinderShape3D_qjb43")
 
 [node name="StepSoundPlayer" type="AudioStreamPlayer3D" parent="." unique_id=1444851839]
 stream = SubResource("AudioStreamRandomizer_l0tcs")
 
-[node name="EnemyModel" type="Node3D" parent="." unique_id=1264137122]
+[node name="EnemyModel" type="Node3D" parent="." unique_id=1264137122 groups=["enemy"]]
 transform = Transform3D(-1.2, 0, -1.04907336e-07, 0, 1.2, 0, 1.04907336e-07, 0, -1.2, 0, 0, 0)
 
-[node name="Skeleton3D" type="Skeleton3D" parent="EnemyModel" unique_id=722132167]
+[node name="Skeleton3D" type="Skeleton3D" parent="EnemyModel" unique_id=722132167 groups=["enemy", "skeleton"]]
 bones/0/name = "metal_mask"
 bones/0/parent = -1
 bones/0/rest = Transform3D(1, 0, 0, 0, 0, 1, 0, -1, 0, 0, 0, 0)
@@ -1596,20 +1597,22 @@ bones/68/enabled = true
 bones/68/position = Vector3(-7.450581e-09, 0.06905198, 0)
 bones/68/rotation = Quaternion(2.3283064e-10, -9.313226e-10, 2.2628228e-09, 1)
 bones/68/scale = Vector3(1, 1, 1)
+script = ExtResource("3_o3pv7")
+damage = 2
 
-[node name="metal_mask" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1165484333]
+[node name="metal_mask" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1165484333 groups=["enemy"]]
 mesh = SubResource("ArrayMesh_gf88j")
 skin = SubResource("Skin_tbw0t")
 
-[node name="metal_arms" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1818937084]
+[node name="metal_arms" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1818937084 groups=["enemy"]]
 mesh = SubResource("ArrayMesh_wjonb")
 skin = SubResource("Skin_rovcg")
 
-[node name="body" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1585128155]
+[node name="body" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=1585128155 groups=["enemy"]]
 mesh = SubResource("ArrayMesh_n2hyd")
 skin = SubResource("Skin_c6eq3")
 
-[node name="eyes" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=2069393304]
+[node name="eyes" type="MeshInstance3D" parent="EnemyModel/Skeleton3D" unique_id=2069393304 groups=["enemy"]]
 mesh = SubResource("ArrayMesh_34gv7")
 skin = SubResource("Skin_pg32h")
 
@@ -1643,3 +1646,6 @@ script = ExtResource("5_gc7sf")
 
 [node name="Searching" type="Node" parent="StateMachine" unique_id=1782561253]
 script = ExtResource("7_2fq87")
+
+[connection signal="body_part_hit" from="." to="." method="_on_body_part_hit"]
+[connection signal="body_part_hit" from="EnemyModel/Skeleton3D" to="." method="_on_skeleton_3d_body_part_hit"]
