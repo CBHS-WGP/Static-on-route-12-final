@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5soa3vjgm6ye"
-path.s3tc="res://.godot/imported/metal_arms_diffuse.tga-7d070526b874c393d112e202a764eaf1.s3tc.ctex"
+uid="uid://ctskiq5fbp0uk"
+path.s3tc="res://.godot/imported/Ground037_1K-JPG_Displacement.jpg-8f197216980f790623033307a2eed9f9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga"
-dest_files=["res://.godot/imported/metal_arms_diffuse.tga-7d070526b874c393d112e202a764eaf1.s3tc.ctex"]
+source_file="res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Displacement.jpg"
+dest_files=["res://.godot/imported/Ground037_1K-JPG_Displacement.jpg-8f197216980f790623033307a2eed9f9.s3tc.ctex"]
 
 [params]
 
@@ -26,8 +26,8 @@ compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=7
+roughness/src_normal="res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_NormalGL.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
