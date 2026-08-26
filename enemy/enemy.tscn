@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://dj47v7mi7b7bi" path="res://sounds/678714__kinniekindaceline__foot-step.wav" id="2_m542x"]
 [ext_resource type="Texture2D" uid="uid://cufyc2iafiskx" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_mask_diffuse.tga" id="3_78jik"]
 [ext_resource type="Script" uid="uid://b7wcq58juaixm" path="res://enemy/skeleton_3d.gd" id="3_o3pv7"]
-[ext_resource type="Texture2D" uid="uid://biwiamm27ebp6" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga" id="4_o3pv7"]
+[ext_resource type="Texture2D" uid="uid://c5soa3vjgm6ye" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/metal_arms_diffuse.tga" id="4_o3pv7"]
 [ext_resource type="Script" uid="uid://bun1hc2m6hugd" path="res://enemy/states/state_roaming.gd" id="4_s81n7"]
 [ext_resource type="Script" uid="uid://4illq10xs5wy" path="res://enemy/states/state_chasing.gd" id="5_gc7sf"]
 [ext_resource type="Texture2D" uid="uid://yutor1mh34ol" path="res://enemy/model/sadist/source/Sadist/Sadist/textures/body_diffuse.tga" id="5_xoplw"]
@@ -717,6 +717,23 @@ tracks/52/path = NodePath("Skeleton3D:mixamorig_RightHandPinky3")
 tracks/52/interp = 1
 tracks/52/loop_wrap = true
 tracks/52/keys = PackedFloat32Array(0, 1, 4.1723254e-07, 9.313233e-09, 8.881782e-16, 1)
+tracks/53/type = "rotation_3d"
+tracks/53/imported = false
+tracks/53/enabled = true
+tracks/53/path = NodePath("death")
+tracks/53/interp = 1
+tracks/53/loop_wrap = true
+tracks/53/keys = PackedFloat32Array()
+
+[sub_resource type="Animation" id="Animation_o3pv7"]
+resource_name = "death"
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array()
 
 [sub_resource type="Animation" id="Animation_pcetj"]
 resource_name = "mixamo_com"
@@ -1097,6 +1114,7 @@ tracks/52/keys = PackedFloat32Array(0, 1, 0.35439515, 2.3613199e-08, 0.21450579,
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_nfy00"]
 _data = {
 &"Take 001": SubResource("Animation_i60g3"),
+&"death": SubResource("Animation_o3pv7"),
 &"mixamo_com": SubResource("Animation_pcetj")
 }
 
@@ -1618,6 +1636,7 @@ skin = SubResource("Skin_pg32h")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="EnemyModel" unique_id=1044007781]
 libraries/ = SubResource("AnimationLibrary_nfy00")
+autoplay = &"Take 001"
 playback_auto_capture_transition_type = 8
 
 [node name="Eye" type="Node3D" parent="." unique_id=1846985120]

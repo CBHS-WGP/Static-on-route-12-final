@@ -1,2 +1,10 @@
 res://enemy/model/run_anim.res
 res://enemy/model/walk_anim.res
+res://player/player.tscn
+res://enemy/enemy.tscn
+res://GUNPICKUP.gd
+res://GUNPICKUP.tscn
+res://player/player.gd
+res://level/level.tscn
+res://gun.tscn
+res://gun.gd
