@@ -42,7 +42,9 @@ _data = {
 &"shoot": SubResource("Animation_yw30f")
 }
 
-[node name="Gun" type="Node3D" unique_id=1995747315]
+[sub_resource type="SphereShape3D" id="SphereShape3D_kw0bs"]
+
+[node name="Gun" type="Node3D" unique_id=1995747315 groups=["pickable"]]
 script = ExtResource("1_kw0bs")
 
 [node name="Sketchfab_Scene" parent="." unique_id=1754568557 instance=ExtResource("1_dk5gl")]
@@ -61,3 +63,7 @@ volume_db = 13.483
 
 [node name="Shootcooldown" type="Timer" parent="." unique_id=435101199]
 one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=297646299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5543488, 0.5321492, -0.59320176)
+shape = SubResource("SphereShape3D_kw0bs")

@@ -20,14 +20,19 @@ script = ExtResource("2_10sax")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1496401473]
 shape = SubResource("CapsuleShape3D_bbutj")
 
-[node name="gunholder" type="Node3D" parent="." unique_id=962866259]
-
 [node name="Camera3D" type="Camera3D" parent="." unique_id=2137530726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.754935, 0)
 
 [node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=124991555]
 spot_range = 10.492
 spot_angle = 29.6482
+
+[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=1362220920]
+transform = Transform3D(1, 0, 0, 0, -8.742278e-08, -1, 0, 2, -4.371139e-08, -0.0036079884, -0.3099041, -0.41687733)
+collide_with_areas = true
+
+[node name="gunholder" type="Node3D" parent="Camera3D" unique_id=962866259 groups=["player"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2249558, -0.5768788, -0.9042069)
 
 [node name="StepSound" type="AudioStreamPlayer" parent="." unique_id=1650116083]
 stream = SubResource("AudioStreamRandomizer_n1j3r")

@@ -27,6 +27,7 @@ enabled=PackedStringArray("res://addons/road-generator/plugin.cfg", "res://addon
 
 player=""
 enemy=""
+pickable=""
 
 [input]
 

@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://bbac4sr7m5jo7"]
 
 [ext_resource type="Script" uid="uid://beh4gkuv3idrq" path="res://gunonground.gd" id="1_ipinc"]
-[ext_resource type="PackedScene" uid="uid://dcw8afj1l3fus" path="res://gun/low-poly_kimber_k6s.glb" id="2_f7o48"]
+[ext_resource type="PackedScene" uid="uid://b2h5ehijudfak" path="res://gun.tscn" id="2_ipinc"]
 
-[node name="Gunonground" type="Node3D" unique_id=423008113]
+[sub_resource type="SphereShape3D" id="SphereShape3D_ipinc"]
+
+[node name="Gunonground" type="Area3D" unique_id=1311644365 groups=["pickable"]]
 script = ExtResource("1_ipinc")
 
-[node name="Area3D" type="Area3D" parent="." unique_id=1582900331]
+[node name="Gun" parent="." unique_id=1995747315 instance=ExtResource("2_ipinc")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1140714468]
-
-[node name="Sketchfab_Scene" parent="." unique_id=1347172798 instance=ExtResource("2_f7o48")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.977495, 0.16081285, -2.177932)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=259102519]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5543488, 0.5321492, -0.59320176)
+shape = SubResource("SphereShape3D_ipinc")

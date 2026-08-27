@@ -8,16 +8,7 @@ var gun = load("res://gun.tscn")
 @onready var Gunshot: AudioStreamPlayer3D = $Gunshot
 @onready var Shootcooldown: Timer = $Shootcooldown
 @onready var gun_holder = $gunholder
-func pickup_gun(gun):
-	if current_gun != null:
-		return
 
-	current_gun = gun
-
-	gun.get_parent().remove_child(gun)
-	gun_holder.add_child(gun)
-
-	gun.transform = Transform3D.IDENTITY
 
 func _physics_process(delta):
 	if Input.is_action_pressed("shoot") and Shootcooldown.is_stopped():

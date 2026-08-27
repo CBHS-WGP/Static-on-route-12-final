@@ -6,7 +6,7 @@ const BASE_SPEED = 5.0
 const SPRINT_SPEED_MULTIPLIER = 2.0
 const JUMP_VELOCITY = 4.5
 
-var current_gun = null
+
 var bullet = load("res://bullet.tscn")
 var gun = load("res://gun.tscn")
 var instance

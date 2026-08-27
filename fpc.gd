@@ -1,11 +1,30 @@
 extends Node3D
 
-var sensitivity = 0.2
-func _ready() -> void:
+
+
+@onready var cam = $"player/Camera3D"
+@onready var ch3d = $"player"
+@onready var raycast = $Camera3D/RayCast3D
+@onready var hand = $Camera3D/gunholder
+var v = Vector3()
+var sens = 0.12
+
+
+func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
-func _input(event: InputEvent) -> void:
+func _process(delta):
+	cam.rotation_degrees.x = v.x
+	ch3d.rotation_degrees.y = v.y
+	
+	var object = raycast.get_collider()
+	if raycast.is_colliding():
+		if object.is_in_group("pickable"):
+			if Input.is_action_pressed("pickup"):
+				object.global_position = hand.global_position
+				object.global_position = hand.global_rotation
+func _input(event):
 	if event is InputEventMouseMotion:
-		get_parent().rotate_y(deg_to_rad(-event.relative.x * sensitivity))
-		rotate_x(deg_to_rad(-event.relative.y * sensitivity))
-		rotation.x = clamp(rotation.x, deg_to_rad(-90), deg_to_rad(90))
+		v.y -= (event.relative.x * sens)
+		v.x -= (event.relative.y * sens)
+		v.x = clamp(v.x, -80, 90)
