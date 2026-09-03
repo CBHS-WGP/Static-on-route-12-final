@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1787868261
+::res://::1788473004
 138476__justinvoke__steptap.wav::AudioStreamWAV::5540744533804715282::1787174347::1787778362::1::::<><><>0<>0<>895f05c032bfd934c2d62dc417c418aa<>res://.godot/imported/138476__justinvoke__steptap.wav-49b315cd0ef94dc8bfff901e91c93acb.sample::
 bullet.gd::GDScript::4699573895923536992::1787619508::0::1::::<>Node3D<><>0<>0<><>::
 bullet.tscn::PackedScene::5033009943324348875::1787618272::0::1::::<><><>0<>0<><>::uid://b77rkbsl3jpfs::::res://bullet.gd
@@ -9,12 +9,12 @@ controls.tscn::PackedScene::8867828691543275130::1787174347::0::1::::<><><>0<>0<
 credits.gd::GDScript::1477781089360648476::1787175036::0::1::::<>Node2D<><>0<>0<><>::
 credits.tscn::PackedScene::738957440208965149::1787174347::0::1::::<><><>0<>0<><>::uid://vb33rpyqgvgm::::res://Leo/credits.gd<>uid://da745xb4pgnhe::::res://Gas station.jpg
 enemy.tscn::PackedScene::2486678099436203574::1787174347::0::1::::<><><>0<>0<><>::uid://bhuwxhhl14bdy::::res://Leo/Enemy/Sadist/Sadist.FBX
-fpc.gd::GDScript::1605665740362868525::1787174347::0::1::::<>Node3D<><>0<>0<><>::
+fpc.gd::GDScript::1605665740362868525::1787870503::0::1::::<>Node3D<><>0<>0<><>::
 Gas station.jpg::CompressedTexture2D::7227137716736371494::1787174452::1787778360::1::::<><><>0<>0<>139dcaba33d6f8e92ed51177b5a5238b<>res://.godot/imported/Gas station.jpg-05dbf45f7925faa42f554bee66acb3a8.ctex::
-gun.gd::GDScript::6192163596659012556::1787780825::0::1::::<>Node3D<><>0<>0<><>::
-gun.tscn::PackedScene::4297799139614662934::1787780864::0::1::::<><><>0<>0<><>::uid://dcw8afj1l3fus::::res://gun/low-poly_kimber_k6s.glb<>uid://cuhsbanky4q6g::::res://gun.gd<>uid://dneii2f72gfpn::::res://gun/u_62htdrvg4y-gun-shot-359196.mp3
-gunonground.gd::GDScript::2683398767198775422::1787264488::0::1::::<>Area3D<><>0<>0<><>::
-gunonground.tscn::PackedScene::2456783722493045648::1787264685::0::1::::<><><>0<>0<><>::uid://beh4gkuv3idrq::::res://gunonground.gd<>uid://dcw8afj1l3fus::::res://gun/low-poly_kimber_k6s.glb
+gun.gd::GDScript::6192163596659012556::1787869487::0::1::::<>Node3D<><>0<>0<><>::
+gun.tscn::PackedScene::4297799139614662934::1787871266::0::1::::<><><>0<>0<><>::uid://dcw8afj1l3fus::::res://gun/low-poly_kimber_k6s.glb<>uid://cuhsbanky4q6g::::res://gun.gd<>uid://dneii2f72gfpn::::res://gun/u_62htdrvg4y-gun-shot-359196.mp3
+gunonground.gd::GDScript::2683398767198775422::1787870738::0::1::::<>Area3D<><>0<>0<><>::
+gunonground.tscn::PackedScene::2456783722493045648::1787871156::0::1::::<><><>0<>0<><>::uid://beh4gkuv3idrq::::res://gunonground.gd<>uid://b2h5ehijudfak::::res://gun.tscn
 GUNPICKUP.gd::GDScript::3331542658396529043::1787779362::0::1::::<>Area3D<><>0<>0<><>::
 GUNPICKUP.tscn::PackedScene::1577987316976110067::1787779689::0::1::::<><><>0<>0<><>::uid://bnp3aydclgw0j::::res://GUNPICKUP.gd<>uid://b2h5ehijudfak::::res://gun.tscn
 main_menu.gd::GDScript::1620107299714173514::1787175132::0::1::::<>Node2D<><>0<>0<><>::
@@ -232,7 +232,7 @@ LICENSE.txt::TextFile::-1::1787620360::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1787620360::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1787620360::0::1::::<><><>0<>0<><>::
 terrain.gdextension::GDExtension::2625506675569593757::1787620360::0::1::::<><><>0<>0<><>::
-::res://addons/terrain_3d/bin/::1787868258
+::res://addons/terrain_3d/bin/::1788472999
 ::res://addons/terrain_3d/bin/libterrain.macos.debug.framework/::1787620360
 ::res://addons/terrain_3d/bin/libterrain.macos.release.framework/::1787620360
 ::res://addons/terrain_3d/extras/::1787620360
@@ -551,18 +551,18 @@ node_3d.tscn::PackedScene::3410910934639280922::1786661852::0::1::::<><><>0<>0<>
 ::res://gun/::1787778362
 low-poly_kimber_k6s.glb::PackedScene::7347059987423094494::1787264122::1787778362::1::::<><><>0<>0<>2844ee868e6c1879f3fa0cf42b633bcb<>res://.godot/imported/low-poly_kimber_k6s.glb-57817eabe62af12a994eaab057eaa0d6.scn::
 u_62htdrvg4y-gun-shot-359196.mp3::AudioStreamMP3::8080475979028066879::1787264187::1787778360::1::::<><><>0<>0<>e57c894fad52a59fcf0e239555940485<>res://.godot/imported/u_62htdrvg4y-gun-shot-359196.mp3-102c01d28b780e7848a63141898bd926.mp3str::
-::res://level/::1787779380
+::res://level/::1787871333
 level.gd::GDScript::4247617694702490843::1779312674::0::1::::<>Node3D<><>0<>0<><>::
-level.tscn::PackedScene::1630485262690632909::1787779380::0::1::::<><><>0<>0<><>::uid://c6rslwmxfavxo::::res://level/model/level.glb<>uid://b1rtv4epv0o2v::::res://level/level.gd<>uid://ckkwdoj7vpe0d::::res://enemy/enemy.tscn<>uid://dfdjg6qbeunvr::::res://player/player.tscn<>uid://wqnhq8bke8vf::::res://GUNPICKUP.tscn
+level.tscn::PackedScene::1630485262690632909::1787871333::0::1::::<><><>0<>0<><>::uid://c6rslwmxfavxo::::res://level/model/level.glb<>uid://b1rtv4epv0o2v::::res://level/level.gd<>uid://ckkwdoj7vpe0d::::res://enemy/enemy.tscn<>uid://dfdjg6qbeunvr::::res://player/player.tscn<>uid://bbac4sr7m5jo7::::res://gunonground.tscn
 Map.tscn::PackedScene::2054418837012575031::1786569626::0::1::::<><><>0<>0<><>::
 ::res://level/model/::1787778362
 dark.tres::StandardMaterial3D::7259673780383184866::1779312674::0::1::::<><><>0<>0<><>::uid://4m3vbowvamhv::::res://addons/kenney_prototype_textures/dark/texture_01.png
 level.glb::PackedScene::6984903666690050080::1779312674::1787778362::1::::<><><>0<>0<>d08687719c870087287ff182b7a595b8<>res://.godot/imported/level.glb-e28bc057b9b971c8369d0b9f0a77a406.scn::uid://dbov1cc7v2tos::::res://level/model/dark.tres<>uid://m2h6edjjaadh::::res://level/model/orange.tres
 orange.tres::StandardMaterial3D::898484916725179357::1779312674::0::1::::<><><>0<>0<><>::uid://0kv326qulf7o::::res://addons/kenney_prototype_textures/orange/texture_01.png
 ::res://Menus and ui/::1787174480
-::res://player/::1787780723
-player.gd::GDScript::8496869368787763647::1787780723::0::1::::Player<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::7516958223222279695::1787780723::0::1::::<><><>0<>0<><>::uid://dtb7gx3wgqwrf::::res://player/player.gd<>uid://b7dtejfcwpps4::::res://sounds/138476__justinvoke__steptap.wav
+::res://player/::1787871090
+player.gd::GDScript::8496869368787763647::1787870813::0::1::::Player<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::7516958223222279695::1787871090::0::1::::<><><>0<>0<><>::uid://dtb7gx3wgqwrf::::res://player/player.gd<>uid://b7dtejfcwpps4::::res://sounds/138476__justinvoke__steptap.wav
 ::res://road-generator/::1787868190
 plugin.cfg::TextFile::-1::1787868190::0::1::::<><><>0<>0<><>::
 plugin.gd::GDScript::3780177927847578702::1787868190::0::1::::<>EditorPlugin<><>0<>1<><>::

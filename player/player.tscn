@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dfdjg6qbeunvr"]
 
 [ext_resource type="Script" uid="uid://dtb7gx3wgqwrf" path="res://player/player.gd" id="2_10sax"]
+[ext_resource type="Script" uid="uid://w42cywlo8tij" path="res://fpc.gd" id="2_g1dw6"]
 [ext_resource type="AudioStream" uid="uid://b7dtejfcwpps4" path="res://sounds/138476__justinvoke__steptap.wav" id="2_ncqi0"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bbutj"]
@@ -20,19 +21,22 @@ script = ExtResource("2_10sax")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1496401473]
 shape = SubResource("CapsuleShape3D_bbutj")
 
-[node name="Camera3D" type="Camera3D" parent="." unique_id=2137530726]
+[node name="head" type="Node3D" parent="." unique_id=1504673269]
+script = ExtResource("2_g1dw6")
+
+[node name="Camera3D" type="Camera3D" parent="head" unique_id=2137530726]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.754935, 0)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="Camera3D" unique_id=124991555]
+[node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=124991555]
 spot_range = 10.492
 spot_angle = 29.6482
 
-[node name="RayCast3D" type="RayCast3D" parent="Camera3D" unique_id=1362220920]
+[node name="RayCast3D" type="RayCast3D" parent="head/Camera3D" unique_id=1362220920]
 transform = Transform3D(1, 0, 0, 0, -8.742278e-08, -1, 0, 2, -4.371139e-08, -0.0036079884, -0.3099041, -0.41687733)
 collide_with_areas = true
 
-[node name="gunholder" type="Node3D" parent="Camera3D" unique_id=962866259 groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2249558, -0.5768788, -0.9042069)
+[node name="hand" type="Node3D" parent="head" unique_id=962866259 groups=["pickable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023283899, 0.07719159, 0.013276219)
 
 [node name="StepSound" type="AudioStreamPlayer" parent="." unique_id=1650116083]
 stream = SubResource("AudioStreamRandomizer_n1j3r")

@@ -12,11 +12,11 @@ var gun = load("res://gun.tscn")
 var instance
 var _gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var _last_step_location := Vector3.ZERO
-@onready var gun_holder = $GunHolder
+@onready var gun_holder = $hand
 @onready var _mouse_sensitivity := 0.15 / (get_viewport().get_visible_rect().size.x/1152.0)
-@onready var _cam := $Camera3D
+@onready var _cam := $head/Camera3D
 @onready var _step_sound: AudioStreamPlayer = $StepSound
-@onready var flashlight = $Camera3D/SpotLight3D
+@onready var flashlight = $head/Camera3D/SpotLight3D
 @onready var gun_anim = $AnimationPlayer
 @onready var gun_barrel = $RayCast3D
 @onready var Gunshot: AudioStreamPlayer3D = $Gunshot
