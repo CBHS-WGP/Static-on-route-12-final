@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ces84wva3tbm2"
-path="res://.godot/imported/road_texture@1x.png-cd475b0b788054de1fba248ef5056660.ctex"
+uid="uid://bkvmx37nipwf7"
+path="res://.godot/imported/TCom_Asphalt16Cracked_header5.jpg-0452a2862bdc28c19f23b0416835b568.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://road-generator/resources/road_texture@1x.png"
-dest_files=["res://.godot/imported/road_texture@1x.png-cd475b0b788054de1fba248ef5056660.ctex"]
+source_file="res://TCom_Asphalt16Cracked_header5.jpg"
+dest_files=["res://.godot/imported/TCom_Asphalt16Cracked_header5.jpg-0452a2862bdc28c19f23b0416835b568.ctex"]
 
 [params]
 
