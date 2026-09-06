@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1788684905
+::res://::1788685582
 138476__justinvoke__steptap.wav::AudioStreamWAV::5540744533804715282::1787623464::1787623835::1::::<><><>0<>0<>895f05c032bfd934c2d62dc417c418aa<>res://.godot/imported/138476__justinvoke__steptap.wav-49b315cd0ef94dc8bfff901e91c93acb.sample::
 bullet.gd::GDScript::4699573895923536992::1787623466::0::1::::<>Node3D<><>0<>0<><>::
 bullet.tscn::PackedScene::5033009943324348875::1788683694::0::1::::<><><>0<>0<><>::uid://b77rkbsl3jpfs::::res://bullet.gd
@@ -131,13 +131,13 @@ terrain3d_road_connector.gd::GDScript::6605371153626814877::1788683694::0::1::::
 4way_1x1.glb::PackedScene::2874122744370068969::1788683694::1788683741::1::::<><><>0<>0<>e5166b70a20394848a7e938b8215e15f<>res://.godot/imported/4way_1x1.glb-8e3149d2e54a913efda1ec30fe9922ab.scn::
 4way_1x1.tscn::PackedScene::9113311732761337867::1788683694::0::1::::<><><>0<>0<><>::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_lane.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://bg7im8h0wkfyv::::res://addons/road-generator/custom_containers/4way_1x1.glb
 4way_2x2.glb::PackedScene::259084198489424216::1788683694::1788683738::1::::<><><>0<>0<>480c8636829cb556ba041a2e8c32a078<>res://.godot/imported/4way_2x2.glb-0f612c97dc4023d679a63c84f89e9085.scn::
-4way_2x2.tscn::PackedScene::4621139712438371167::1788683694::0::1::::<><>res://addons/road-generator/resources/road_container.png<>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_lane.gd<>uid://dxrcxg7fpyfg::::res://addons/road-generator/custom_containers/4way_2x2.glb
+4way_2x2.tscn::PackedScene::4621139712438371167::1788683694::0::1::::<><><>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_lane.gd<>uid://dxrcxg7fpyfg::::res://addons/road-generator/custom_containers/4way_2x2.glb
 highway_offramp.glb::PackedScene::8313900590227713450::1788683694::1788683735::1::::<><><>0<>0<>c060885721fb7a10ca08dddadd31c148<>res://.godot/imported/highway_offramp.glb-da12c377559118c1aafb13e83b418288.scn::
 highway_offramp.tscn::PackedScene::4890321224206596316::1788683694::0::1::::<><><>0<>0<><>::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_container.gd<>uid://dqpky0vcyau4a::::res://addons/road-generator/custom_containers/highway_offramp.glb
 highway_onramp.glb::PackedScene::52292838493027450::1788683694::1788683735::1::::<><><>0<>0<>55ee76aaebbd421574f473b7b79addad<>res://.godot/imported/highway_onramp.glb-11a8eeb925dbe42b5cb5663ea602df56.scn::
-highway_onramp.tscn::PackedScene::4808294441739227611::1788683694::0::1::::<><>res://addons/road-generator/resources/road_container.png<>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/resources/road_texture.material<>uid://0lixivpeyg5::::res://addons/road-generator/custom_containers/highway_onramp.glb
+highway_onramp.tscn::PackedScene::4808294441739227611::1788683694::0::1::::<><><>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/resources/road_texture.material<>uid://0lixivpeyg5::::res://addons/road-generator/custom_containers/highway_onramp.glb
 splitter_2x2.glb::PackedScene::6476888985356423144::1788683694::1788683734::1::::<><><>0<>0<>f228aa9045353e24e3d9ed3228a83f22<>res://.godot/imported/splitter_2x2.glb-e0dd4ae1d6f87d20904092bd6e6e8dd2.scn::
-splitter_2x2.tscn::PackedScene::3732098782633080166::1788683694::0::1::::<><>res://addons/road-generator/resources/road_point.png<>0<>0<><>::res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/resources/road_texture.material<>uid://cyjpoeddap1se::::res://addons/road-generator/custom_containers/splitter_2x2.glb
+splitter_2x2.tscn::PackedScene::3732098782633080166::1788683694::0::1::::<><><>0<>0<><>::res://addons/road-generator/nodes/road_point.gd<>res://addons/road-generator/nodes/road_container.gd<>res://addons/road-generator/resources/road_texture.material<>uid://cyjpoeddap1se::::res://addons/road-generator/custom_containers/splitter_2x2.glb
 ::res://addons/road-generator/nodes/::1788683708
 road_container.gd::GDScript::4361003622949517936::1788683694::0::1::::RoadContainer<>Node3D<><>0<>1<><>::
 road_graph_node.gd::GDScript::858031809960257697::1788683694::0::1::::RoadGraphNode<>Node3D<><>0<>1<><>::
@@ -189,7 +189,7 @@ LICENSE.txt::TextFile::-1::1787623465::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1787623466::0::1::::<><><>0<>0<><>::
 README.md::TextFile::-1::1787623465::0::1::::<><><>0<>0<><>::
 terrain.gdextension::GDExtension::2625506675569593757::1787623466::0::1::::<><><>0<>0<><>::
-::res://addons/terrain_3d/bin/::1788684908
+::res://addons/terrain_3d/bin/::1788685574
 ::res://addons/terrain_3d/bin/libterrain.macos.debug.framework/::1787623491
 ::res://addons/terrain_3d/bin/libterrain.macos.release.framework/::1787623491
 ::res://addons/terrain_3d/extras/::1787623491
@@ -260,8 +260,8 @@ region_mover.gd::GDScript::3312089740165276770::1787623466::0::1::::<>Terrain3D<
 ::res://addons/terrain_3d/utils/::1787623491
 terrain_3d_objects.gd::GDScript::7256511001583860152::1787623466::0::1::::Terrain3DObjects<>Node3D<><>0<>1<><>::
 transform_changed_notifier.gd::GDScript::5546349407322732584::1787623466::0::1::::<>Node3D<><>0<>1<><>::
-::res://Cohen/::1788683694
-map.tscn::PackedScene::8671609741359032822::1788683693::0::1::::<><><>0<>0<><>::uid://c2u0b6xjc8x16::::res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Color.jpg
+::res://Cohen/::1788685427
+map.tscn::PackedScene::8671609741359032822::1788685427::0::1::::<><><>0<>0<><>::uid://c2u0b6xjc8x16::::res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Color.jpg<>uid://c4tr0n8sfkgqp::::res://addons/road-generator/nodes/road_manager.gd<>uid://dbov1cc7v2tos::::res://level/model/dark.tres<>uid://b3erde7m8bsia::::res://addons/road-generator/nodes/road_container.gd<>uid://jgnguuesv7do::::res://addons/road-generator/nodes/road_point.gd<>uid://d4jigc3edcwuq::::res://Cohen/Map terrain/tree.glb
 terrain3d-02_01.res::Terrain3DRegion::2683075947169665772::1788683693::0::1::::<><><>0<>0<><>::
 terrain3d-02_02.res::Terrain3DRegion::5459111024612819122::1788683693::0::1::::<><><>0<>0<><>::
 terrain3d-02_03.res::Terrain3DRegion::400404698329232142::1788683693::0::1::::<><><>0<>0<><>::
@@ -457,16 +457,15 @@ terrain3d-14_12.res::Terrain3DRegion::7272622925279962193::1788683694::0::1::::<
 terrain3d-14_13.res::Terrain3DRegion::7018807806515179680::1788683694::0::1::::<><><>0<>0<><>::
 terrain3d-14_14.res::Terrain3DRegion::183889331705733877::1788683694::0::1::::<><><>0<>0<><>::
 terrain3d-14_15.res::Terrain3DRegion::4715910794047871867::1788683694::0::1::::<><><>0<>0<><>::
-::res://Cohen/Map terrain/::1788685283
-tree_3.png::CompressedTexture2D::1138834589217979020::1788685275::1788685286::1::::<><><>0<>0<>8851fc1786ed34a20c6d1c98c97a3aef<>res://.godot/imported/tree_3.png-3287e9d5263520d8ac59eda1f1652d1a.s3tc.ctex::
-tree_2.png::CompressedTexture2D::7853096952872427336::1788685275::1788685285::1::::<><><>0<>0<>0cec90c6c17c693efdefc96402c6e606<>res://.godot/imported/tree_2.png-95d40011559cf832d7c6d2978f59ce89.s3tc.ctex::
-tree_1.png::CompressedTexture2D::6534211232820110870::1788685275::1788685285::1::::<><><>0<>0<>07aa6d726b5952cc2c83c1d0ef968707<>res://.godot/imported/tree_1.png-dc64dd61a9182e9aae1a58ed664ca255.s3tc.ctex::
-tree_0.png::CompressedTexture2D::7502576157552239858::1788685274::1788685285::1::::<><><>0<>0<>686181da5579b5ce99c2f1ce91f982ee<>res://.godot/imported/tree_0.png-e8fc693de9efe14cfb5ef97c50f58af9.s3tc.ctex::
+::res://Cohen/Map terrain/::1788685286
 tree.glb::PackedScene::9213814515561420752::1788685273::1788685283::1::::<><><>0<>0<>201cad799586ae5d6df0527a927475ba<>res://.godot/imported/tree.glb-9b82a2bc708948f7fd9248215e1623fa.scn::uid://c0dhrfa0q4l8a::::res://Cohen/Map terrain/tree_1.png<>uid://de5kllfdp41pu::::res://Cohen/Map terrain/tree_0.png<>uid://dj5dmhsj8xy85::::res://Cohen/Map terrain/tree_2.png<>uid://qhwo63gsl477::::res://Cohen/Map terrain/tree_3.png
+tree_0.png::CompressedTexture2D::7502576157552239858::1788685274::1788685285::1::::<><><>0<>0<>686181da5579b5ce99c2f1ce91f982ee<>res://.godot/imported/tree_0.png-e8fc693de9efe14cfb5ef97c50f58af9.s3tc.ctex::
+tree_1.png::CompressedTexture2D::6534211232820110870::1788685275::1788685285::1::::<><><>0<>0<>07aa6d726b5952cc2c83c1d0ef968707<>res://.godot/imported/tree_1.png-dc64dd61a9182e9aae1a58ed664ca255.s3tc.ctex::
+tree_2.png::CompressedTexture2D::7853096952872427336::1788685275::1788685285::1::::<><><>0<>0<>0cec90c6c17c693efdefc96402c6e606<>res://.godot/imported/tree_2.png-95d40011559cf832d7c6d2978f59ce89.s3tc.ctex::
+tree_3.png::CompressedTexture2D::1138834589217979020::1788685275::1788685286::1::::<><><>0<>0<>8851fc1786ed34a20c6d1c98c97a3aef<>res://.godot/imported/tree_3.png-3287e9d5263520d8ac59eda1f1652d1a.s3tc.ctex::
 ::res://Cohen/Map terrain/Ground037_2K-JPG/::1787623492
 ::res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/::1788684926
 Ground037.png::CompressedTexture2D::4634050222364562333::1787623464::1787623828::1::::<><><>0<>0<>7a8a862790660f0f3e9bcc372ed08133<>res://.godot/imported/Ground037.png-4c162af8b73af240086aa4e3779c6f20.ctex::
-Ground037_1K-JPG.blend::PackedScene::261658156378553197::1787623464::1788684926::1::::<><><>0<>0<>bc9a4405a02a33642eb6a8a9a386cc5a<>res://.godot/imported/Ground037_1K-JPG.blend-fe5d0ec907cd32e87e1443f3a32be128.scn::
 Ground037_1K-JPG.tres::StandardMaterial3D::-1::1787623464::0::1::::<><><>0<>0<><>::res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Color.jpg<>res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_AmbientOcclusion.jpg<>res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Displacement.jpg<>res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_Roughness.jpg<>res://Cohen/Map terrain/Ground037_2K-JPG/Ground37/Ground037_1K-JPG_NormalGL.jpg
 Ground037_1K-JPG_AmbientOcclusion.jpg::CompressedTexture2D::7261991702134294283::1787623464::1787623828::1::::<><><>0<>0<>db5be42ce81c73fedc3673d9e0d4ef74<>res://.godot/imported/Ground037_1K-JPG_AmbientOcclusion.jpg-24a06633945f224dd5652a6f09682942.s3tc.ctex::
 Ground037_1K-JPG_Color.jpg::CompressedTexture2D::6710749075474610551::1787623464::1787623828::1::::<><><>0<>0<>879e995ce060ab62db450bf547d720b1<>res://.godot/imported/Ground037_1K-JPG_Color.jpg-dce8d85b0d3283bb6c4838ee39acf74f.s3tc.ctex::
@@ -540,7 +539,7 @@ road_actor.gd::GDScript::958322755328935508::1788683694::0::1::::<>Node3D<><>0<>
 ::res://road_demos/demo_resources/decorations/::1788683708
 edge_barrier.tscn::PackedScene::8845591984161015367::1788683694::0::1::::<><><>0<>0<><>::
 ::res://road_demos/intersections/::1788683708
-intersection_demo.tscn::PackedScene::1808187717865009231::1788683695::0::1::::<><>res://addons/road-generator/resources/road_container.png<>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>uid://bos557pj10dx8::::res://road_demos/demo_resources/demo_ui.theme<>uid://de542wwer561r::::res://road_demos/demo_resources/demo_ui_common.tscn<>uid://b63rq4jeigte2::::res://addons/road-generator/custom_containers/4way_2x2.tscn<>uid://cbw5410mk0wgq::::res://addons/road-generator/custom_containers/highway_offramp.tscn<>uid://dpashsuk5lr4x::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_manager.gd<>uid://d23s6bfnq6fex::::res://addons/road-generator/custom_containers/4way_1x1.tscn<>uid://dfggtpn3gyrn0::::res://addons/road-generator/custom_containers/3way_2x2.tscn<>uid://carf53o7nq0qh::::res://addons/road-generator/custom_containers/highway_onramp.tscn<>uid://btf4eewwb5v7s::::res://addons/road-generator/custom_containers/splitter_2x2.tscn<>res://addons/road-generator/nodes/road_point.gd<>uid://bo55v7mk1vavq::::res://road_demos/demo_resources/actors/RoadActor.tscn
+intersection_demo.tscn::PackedScene::1808187717865009231::1788683695::0::1::::<><><>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>uid://bos557pj10dx8::::res://road_demos/demo_resources/demo_ui.theme<>uid://de542wwer561r::::res://road_demos/demo_resources/demo_ui_common.tscn<>uid://b63rq4jeigte2::::res://addons/road-generator/custom_containers/4way_2x2.tscn<>uid://cbw5410mk0wgq::::res://addons/road-generator/custom_containers/highway_offramp.tscn<>uid://dpashsuk5lr4x::::res://addons/road-generator/resources/road_texture.material<>res://addons/road-generator/nodes/road_manager.gd<>uid://d23s6bfnq6fex::::res://addons/road-generator/custom_containers/4way_1x1.tscn<>uid://dfggtpn3gyrn0::::res://addons/road-generator/custom_containers/3way_2x2.tscn<>uid://carf53o7nq0qh::::res://addons/road-generator/custom_containers/highway_onramp.tscn<>uid://btf4eewwb5v7s::::res://addons/road-generator/custom_containers/splitter_2x2.tscn<>res://addons/road-generator/nodes/road_point.gd<>uid://bo55v7mk1vavq::::res://road_demos/demo_resources/actors/RoadActor.tscn
 readme.md::TextFile::-1::1788683695::0::1::::<><><>0<>0<><>::
 ::res://road_demos/navigation/::1788683708
 astar_lane_graph.gd::GDScript::5577054892954678765::1788683695::0::1::::<>Node3D<><>0<>0<><>::
@@ -548,7 +547,7 @@ astar_lane_graph.tscn::PackedScene::3832628737957446279::1788683695::0::1::::<><
 readme.md::TextFile::-1::1788683695::0::1::::<><><>0<>0<><>::
 ::res://road_demos/performance_stress_test/::1788683708
 performance_stress_test.gd::GDScript::3914589191762256797::1788683695::0::1::::<>Node3D<><>0<>0<><>::
-performance_stress_test.tscn::PackedScene::6015199054464551375::1788683695::0::1::::<><>res://addons/road-generator/resources/road_container.png<>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dpashsuk5lr4x::::res://addons/road-generator/resources/road_texture.material<>uid://de542wwer561r::::res://road_demos/demo_resources/demo_ui_common.tscn<>uid://bos557pj10dx8::::res://road_demos/demo_resources/demo_ui.theme<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_point.gd<>res://road_demos/performance_stress_test/performance_stress_test.gd
+performance_stress_test.tscn::PackedScene::6015199054464551375::1788683695::0::1::::<><><>0<>0<><>::res://addons/road-generator/nodes/road_container.gd<>uid://dpashsuk5lr4x::::res://addons/road-generator/resources/road_texture.material<>uid://de542wwer561r::::res://road_demos/demo_resources/demo_ui_common.tscn<>uid://bos557pj10dx8::::res://road_demos/demo_resources/demo_ui.theme<>res://addons/road-generator/nodes/road_manager.gd<>res://addons/road-generator/nodes/road_point.gd<>res://road_demos/performance_stress_test/performance_stress_test.gd
 README.md::TextFile::-1::1788683695::0::1::::<><><>0<>0<><>::
 ::res://road_demos/procedural_generator/::1788683733
 ProceduralGenerator_setup.png::CompressedTexture2D::6957253450882443144::1788683695::1788683733::1::::<><><>0<>0<>ff9824434042ce6f7e50575fba342636<>res://.godot/imported/ProceduralGenerator_setup.png-490814624fb303b0de944e6a620f05dc.ctex::
