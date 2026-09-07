@@ -7,8 +7,7 @@ const SPRINT_SPEED_MULTIPLIER = 2.0
 const JUMP_VELOCITY = 4.5
 
 
-var bullet = load("res://bullet.tscn")
-var gun = load("res://gun.tscn")
+
 var instance
 var _gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var _last_step_location := Vector3.ZERO
@@ -17,10 +16,7 @@ var _last_step_location := Vector3.ZERO
 @onready var _cam := $head/Camera3D
 @onready var _step_sound: AudioStreamPlayer = $StepSound
 @onready var flashlight = $head/Camera3D/SpotLight3D
-@onready var gun_anim = $AnimationPlayer
-@onready var gun_barrel = $RayCast3D
-@onready var Gunshot: AudioStreamPlayer3D = $Gunshot
-@onready var Shootcooldown: Timer = $Shootcooldown
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	_last_step_location = Vector3(global_position.x, 0.0, global_position.z)

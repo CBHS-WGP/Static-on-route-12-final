@@ -3,14 +3,14 @@ extends Node3D
 const SPEED =80
 @onready var mesh =$MeshInstance3D
 @onready var ray = $RayCast3D
-
+var velocity = Vector3.ZERO
 func _ready() -> void:
-	pass # Replace with function body.
+	pass # Replace with function body. 
 
 
 
 func _process(delta: float) -> void:
-	position += transform.basis * Vector3(0, 0, -SPEED) * delta
+	global_position += velocity * delta
 	if ray.is_colliding():
 		mesh.visible = false 
 		ray.enabled = false

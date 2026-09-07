@@ -36,7 +36,7 @@ transform = Transform3D(1, 0, 0, 0, -8.742278e-08, -1, 0, 2, -4.371139e-08, -0.0
 collide_with_areas = true
 
 [node name="hand" type="Node3D" parent="head" unique_id=962866259 groups=["pickable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.023283899, 0.07719159, 0.013276219)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28996545, 0.17875493, -0.6380881)
 
 [node name="StepSound" type="AudioStreamPlayer" parent="." unique_id=1650116083]
 stream = SubResource("AudioStreamRandomizer_n1j3r")
