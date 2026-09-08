@@ -49,7 +49,7 @@ transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, 0, 0, 0)
 script = ExtResource("1_kw0bs")
 
 [node name="Sketchfab_Scene" parent="." unique_id=1754568557 instance=ExtResource("1_dk5gl")]
-transform = Transform3D(0.0019459168, 0, 0.09998106, 0, 0.1, 0, -0.09998106, 0, 0.0019459168, 0.5632286, 0.3738413, -0.60137767)
+transform = Transform3D(0.001945916, 0, 0.09998101, 0, 0.1, 0, -0.09998101, 0, 0.001945916, 0.5632286, 0.3738413, -0.60137767)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=337241308]
 libraries/ = SubResource("AnimationLibrary_8iju2")

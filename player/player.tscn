@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dtb7gx3wgqwrf" path="res://player/player.gd" id="2_10sax"]
 [ext_resource type="Script" uid="uid://w42cywlo8tij" path="res://fpc.gd" id="2_g1dw6"]
 [ext_resource type="AudioStream" uid="uid://b7dtejfcwpps4" path="res://sounds/138476__justinvoke__steptap.wav" id="2_ncqi0"]
+[ext_resource type="Script" uid="uid://dkmhpbw0k3p0i" path="res://player/color_rect.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bbutj"]
 
@@ -36,7 +37,7 @@ transform = Transform3D(1, 0, 0, 0, -8.742278e-08, -1, 0, 2, -4.371139e-08, -0.0
 collide_with_areas = true
 
 [node name="hand" type="Node3D" parent="head" unique_id=962866259 groups=["pickable"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.28996545, 0.17875493, -0.6380881)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.26412576, 0.27934206, -0.6380881)
 
 [node name="StepSound" type="AudioStreamPlayer" parent="." unique_id=1650116083]
 stream = SubResource("AudioStreamRandomizer_n1j3r")
@@ -58,3 +59,4 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
+script = ExtResource("4_yw30f")
