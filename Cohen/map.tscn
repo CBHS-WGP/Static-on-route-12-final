@@ -159,7 +159,6 @@ environment = SubResource("Environment_33h8q")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1819862393]
 transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
-visible = false
 shadow_enabled = true
 
 [node name="Terrain3D" type="Terrain3D" parent="." unique_id=1514673293]
@@ -525,7 +524,7 @@ transform = Transform3D(-4.998762, 0, -0.111255564, 0, 5, 0, 0.111255564, 0, -4.
 transform = Transform3D(-4.998762, 0, -0.111255564, 0, 5, 0, 0.111255564, 0, -4.998762, -1829.9865, -1.9665527, 1321.8772)
 
 [node name="House_13" parent="Town" unique_id=494096559 instance=ExtResource("9_fvrc1")]
-transform = Transform3D(3.895815, 0, 3.134107, 0, 5, 0, -3.134107, 0, 3.895815, -1621.9484, 3.3745499, 945.9839)
+transform = Transform3D(3.895815, 0, 3.134107, 0, 5, 0, -3.134107, 0, 3.895815, -1621.9484, 0.049152374, 945.9839)
 
 [node name="House_14" parent="Town" unique_id=1846622723 instance=ExtResource("9_fvrc1")]
 transform = Transform3D(-4.998486, 0, 0.123033434, 0, 4.9999995, 0, -0.123033434, 0, -4.998486, -1622.23, -1.865448, 1127.9354)
@@ -573,7 +572,6 @@ transform = Transform3D(4.9013567, 0, -0.98828685, 0, 5, 0, 0.98828685, 0, 4.901
 transform = Transform3D(-4.999879, 0, -0.03490615, 0, 5, 0, 0.03490615, 0, -4.999879, -1870.9384, -0.5529976, 1130.9865)
 
 [node name="Trees" type="Node3D" parent="." unique_id=569144170]
-visible = false
 
 [node name="Tree1" parent="Trees" unique_id=2008181010 instance=ExtResource("6_uvyeg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1479.4099, 0.05224514, 587.32007)
@@ -2199,6 +2197,90 @@ transform = Transform3D(-0.99999994, 0, -8.742277e-08, 0, 1, 0, 8.742277e-08, 0,
 [node name="Props_Shelf_7" parent="Houses Interior/Shelves" unique_id=1707403491 instance=ExtResource("12_tx8d5")]
 transform = Transform3D(-0.99999976, 0, -8.742275e-08, 0, 1, 0, 8.742275e-08, 0, -0.99999976, -1441.9835, 6.307846, 927.9499)
 
+[node name="Props_Shelf_8" parent="Houses Interior/Shelves" unique_id=124616963 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.421653, 0, 0.90675706, 0, 1, 0, -0.90675706, 0, 0.421653, -1468.8741, 6.307846, 778.184)
+
+[node name="Props_Shelf_9" parent="Houses Interior/Shelves" unique_id=176384697 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.8077224, 0, 0.5895629, 0, 1, 0, -0.5895629, 0, 0.8077224, -1584.96, 6.307846, 770.3693)
+
+[node name="Props_Shelf_10" parent="Houses Interior/Shelves" unique_id=597188366 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.85290444, 0, -0.52206695, 0, 1, 0, 0.52206695, 0, 0.85290444, -1665.6753, 6.307846, 722.01984)
+
+[node name="Props_Shelf_11" parent="Houses Interior/Shelves" unique_id=1672082978 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.99829316, 0, -0.058400452, 0, 1, 0, 0.058400452, 0, 0.99829316, -1569.6597, 6.307846, 843.6815)
+
+[node name="Props_Shelf_12" parent="Houses Interior/Shelves" unique_id=570785886 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.9662817, 0, -0.25748703, 0, 1, 0, 0.25748703, 0, 0.9662817, -1620.2484, 6.307846, 837.2979)
+
+[node name="Props_Shelf_13" parent="Houses Interior/Shelves" unique_id=370526124 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.81844056, 0, -0.5745911, 0, 1, 0, 0.5745911, 0, 0.81844056, -1664.7457, 6.670374, 806.4277)
+
+[node name="Props_Shelf_14" parent="Houses Interior/Shelves" unique_id=10617267 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.18924975, 0, 0.9819288, 0, 1, 0, -0.9819288, 0, 0.18924975, -1793.5128, 13.935177, 799.5347)
+
+[node name="Props_Shelf_15" parent="Houses Interior/Shelves" unique_id=1146055098 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.17971236, 0, 0.98371917, 0, 1, 0, -0.98371917, 0, 0.17971236, -1790.5199, 13.935177, 780.41754)
+
+[node name="Props_Shelf_16" parent="Houses Interior/Shelves" unique_id=868140066 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.94097537, 0, 0.338475, 0, 1, 0, -0.338475, 0, 0.94097537, -1851.3937, 8.527005, 780.41754)
+
+[node name="Props_Shelf_17" parent="Houses Interior/Shelves" unique_id=1738114752 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.89807373, 0, 0.43984506, 0, 1, 0, -0.43984506, 0, 0.89807373, -1904.8225, 9.053167, 808.70416)
+
+[node name="Props_Shelf_18" parent="Houses Interior/Shelves" unique_id=821408645 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.85414135, 0, 0.5200409, 0, 1, 0, -0.5200409, 0, 0.85414135, -1952.8204, 6.54591, 838.00726)
+
+[node name="Props_Shelf_19" parent="Houses Interior/Shelves" unique_id=1416231621 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.7977208, 0, 0.603027, 0, 1, 0, -0.603027, 0, 0.7977208, -1991.9609, 6.54591, 873.6809)
+
+[node name="Props_Shelf_20" parent="Houses Interior/Shelves" unique_id=1621581953 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.9330101, 0, -0.35985032, 0, 1, 0, 0.35985032, 0, 0.9330101, -2068.66, 6.54591, 890.7002)
+
+[node name="Props_Shelf_21" parent="Houses Interior/Shelves" unique_id=661062233 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.09810403, 0, 0.99517626, 0, 1, 0, -0.99517626, 0, 0.09810403, -2109.554, 6.54591, 981.09357)
+
+[node name="Props_Shelf_22" parent="Houses Interior/Shelves" unique_id=2101682643 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.14003718, 0, 0.99014634, 0, 1, 0, -0.99014634, 0, -0.14003718, -2106.326, 6.54591, 1041.2148)
+
+[node name="Props_Shelf_23" parent="Houses Interior/Shelves" unique_id=1297429068 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.95728415, 0, -0.28914875, 0, 1, 0, 0.28914875, 0, -0.95728415, -2076.6824, 4.9055786, 1148.5508)
+
+[node name="Props_Shelf_24" parent="Houses Interior/Shelves" unique_id=257359170 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.9545841, 0, -0.2979414, 0, 1, 0, 0.2979414, 0, -0.9545841, -2061.2224, 4.9055786, 1198.8271)
+
+[node name="Props_Shelf_25" parent="Houses Interior/Shelves" unique_id=1929425344 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.9545841, 0, -0.2979414, 0, 1, 0, 0.2979414, 0, -0.9545841, -2048.7861, 4.9055786, 1249.0997)
+
+[node name="Props_Shelf_26" parent="Houses Interior/Shelves" unique_id=935641876 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.9317799, 0, -0.36302358, 0, 1, 0, 0.36302358, 0, -0.9317799, -2024.2561, 4.9055786, 1295.3682)
+
+[node name="Props_Shelf_27" parent="Houses Interior/Shelves" unique_id=779137185 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(-0.8877431, 0, -0.4603393, 0, 1, 0, 0.4603393, 0, -0.8877431, -2001.5807, 7.7232265, 1346.8344)
+
+[node name="Props_Shelf_28" parent="Houses Interior/Shelves" unique_id=1026882741 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1787.4668, 12.755389, 1334.7009)
+
+[node name="Props_Shelf_29" parent="Houses Interior/Shelves" unique_id=1036419445 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1788.8702, 12.755389, 1309.7103)
+
+[node name="Props_Shelf_30" parent="Houses Interior/Shelves" unique_id=2039312409 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1670.182, 12.755389, 1309.7103)
+
+[node name="Props_Shelf_31" parent="Houses Interior/Shelves" unique_id=1003806408 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1670.182, 12.755389, 1331.6123)
+
+[node name="Props_Shelf_32" parent="Houses Interior/Shelves" unique_id=985060118 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1556.2463, 13.551398, 1331.6123)
+
+[node name="Props_Shelf_33" parent="Houses Interior/Shelves" unique_id=342885659 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.006003974, 0, -0.99998206, 0, 1, 0, 0.99998206, 0, 0.006003974, -1556.2463, 13.551398, 1313.6259)
+
+[node name="Props_Shelf_34" parent="Houses Interior/Shelves" unique_id=1391084602 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.6882026, 0, 0.7255187, 0, 1, 0, -0.7255187, 0, 0.6882026, -1508.9032, 8.11707, 1274.1367)
+
+[node name="Props_Shelf_35" parent="Houses Interior/Shelves" unique_id=1799257375 instance=ExtResource("12_tx8d5")]
+transform = Transform3D(0.6882026, 0, 0.7255187, 0, 1, 0, -0.7255187, 0, 0.6882026, -1491.7112, 12.845813, 1255.0856)
+
 [node name="Drawers" type="Node3D" parent="Houses Interior" unique_id=49728042]
 
 [node name="Props_Drawer" parent="Houses Interior/Drawers" unique_id=1611956541 instance=ExtResource("13_ychty")]
@@ -2276,145 +2358,373 @@ transform = Transform3D(-0.6427875, 0, -0.76604456, 0, 1, 0, 0.76604456, 0, -0.6
 transform = Transform3D(0.7313538, 0, -0.68199825, 0, 1, 0, 0.68199825, 0, 0.7313538, -1474.5969, 4.203258, 1303.5558)
 
 [node name="Props_Table_Square_8" parent="Houses Interior/Tables and Chairs" unique_id=1935435932 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.085382015, 0, -0.99634826, 0, 1, 0, 0.99634826, 0, 0.085382015, -1615.1476, 11.11871, 1319.9133)
+transform = Transform3D(-0.0039096475, 0, -0.99999243, 0, 1, 0, 0.99999243, 0, -0.0039096475, -1615.1476, 11.11871, 1319.9133)
 
 [node name="Props_Chair_16" parent="Houses Interior/Tables and Chairs" unique_id=1860833995 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.08885941, 0, 0.99604416, 0, 1, 0, -0.99604416, 0, -0.08885941, -1613.5426, 9.179897, 1324.9645)
+transform = Transform3D(0.015079193, 0, 0.9998863, 0, 1, 0, -0.9998863, 0, 0.015079193, -1613.5426, 9.179897, 1324.9645)
 
 [node name="Props_Chair_17" parent="Houses Interior/Tables and Chairs" unique_id=1122755472 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.12876111, 0, -0.9916757, 0, 1, 0, 0.9916757, 0, 0.12876111, -1615.23, 9.179897, 1314.8325)
+transform = Transform3D(0.049181126, 0, -0.99878997, 0, 1, 0, 0.99878997, 0, 0.049181126, -1615.23, 9.179897, 1314.8325)
 
 [node name="Props_Chair_18" parent="Houses Interior/Tables and Chairs" unique_id=2050789630 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9970554, 0, 0.076684356, 0, 1, 0, -0.076684356, 0, 0.9970554, -1620.2615, 9.1507225, 1319.8036)
+transform = Transform3D(0.9995672, 0, -0.029421873, 0, 1, 0, 0.029421873, 0, 0.9995672, -1620.2615, 9.1507225, 1319.8036)
 
 [node name="Props_Table_Square_9" parent="Houses Interior/Tables and Chairs" unique_id=1378326125 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.059776656, 0, -0.99821186, 0, 1, 0, 0.99821186, 0, 0.059776656, -1741.0546, 11.11871, 1319.9364)
+transform = Transform3D(0.027921584, 0, -0.99961025, 0, 1, 0, 0.99961025, 0, 0.027921584, -1740.2511, 11.11871, 1319.9364)
 
 [node name="Props_Chair_19" parent="Houses Interior/Tables and Chairs" unique_id=1854768873 instance=ExtResource("15_j3jmi")]
 transform = Transform3D(-0.063260704, 0, 0.99799705, 0, 1, 0, -0.99799705, 0, -0.063260704, -1739.5797, 9.179897, 1325.0271)
 
 [node name="Props_Chair_20" parent="Houses Interior/Tables and Chairs" unique_id=761625988 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.1032614, 0, -0.9946543, 0, 1, 0, 0.9946543, 0, 0.1032614, -1741.0065, 9.179897, 1314.8551)
+transform = Transform3D(0.050592944, 0, -0.99871933, 0, 1, 0, 0.99871933, 0, 0.050592944, -1741.0065, 9.179897, 1314.8551)
 
 [node name="Props_Chair_21" parent="Houses Interior/Tables and Chairs" unique_id=357153298 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9986955, 0, 0.0510637, 0, 1, 0, -0.0510637, 0, 0.9986955, -1746.164, 9.1507225, 1319.6954)
+transform = Transform3D(0.99956, 0, 0.029666249, 0, 1, 0, -0.029666249, 0, 0.99956, -1745.4911, 9.1507225, 1320.8693)
 
 [node name="Props_Table_Square_10" parent="Houses Interior/Tables and Chairs" unique_id=735501577 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.059776656, 0, -0.99821186, 0, 1, 0, 0.99821186, 0, 0.059776656, -1860.1935, 11.11871, 1319.9364)
+transform = Transform3D(1.0000001, 0, 0, 0, 1, 0, 0, 0, 1.0000001, -1849.8325, 11.11871, 1319.9364)
 
 [node name="Props_Chair_22" parent="Houses Interior/Tables and Chairs" unique_id=1295280650 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.063260704, 0, 0.99799705, 0, 1, 0, -0.99799705, 0, -0.063260704, -1858.7186, 9.179897, 1325.0271)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1854.2052, 9.179897, 1320.2645)
 
 [node name="Props_Chair_23" parent="Houses Interior/Tables and Chairs" unique_id=1183123051 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.1032614, 0, -0.9946543, 0, 1, 0, 0.9946543, 0, 0.1032614, -1860.1454, 9.179897, 1314.8551)
+transform = Transform3D(0.026176812, 0, -0.99965733, 0, 1, 0, 0.99965733, 0, 0.026176812, -1849.8264, 9.179897, 1314.8551)
 
 [node name="Props_Chair_24" parent="Houses Interior/Tables and Chairs" unique_id=2068357348 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9986955, 0, 0.0510637, 0, 1, 0, -0.0510637, 0, 0.9986955, -1865.3029, 9.1507225, 1319.6954)
+transform = Transform3D(-4.3711392e-08, 0, 1.0000001, 0, 1, 0, -1.0000001, 0, -4.3711392e-08, -1849.8525, 9.1507225, 1325.0033)
 
 [node name="Props_Table_Square_11" parent="Houses Interior/Tables and Chairs" unique_id=706574018 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.9063079, 0, 0.42261833, 0, 1, 0, -0.42261833, 0, 0.9063079, -2007.4955, 6.652441, 1319.5908)
+transform = Transform3D(-0.4692712, 0, 0.883054, 0, 1, 0, -0.883054, 0, -0.4692712, -2009.4707, 6.652441, 1318.8414)
 
 [node name="Props_Chair_25" parent="Houses Interior/Tables and Chairs" unique_id=384912377 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.90630776, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, 0.90630776, -2012.7225, 6.3217216, 1321.622)
+transform = Transform3D(-0.46927133, 0, 0.88305414, 0, 1, 0, -0.88305414, 0, -0.46927133, -2007.17, 5.9154935, 1323.9556)
 
 [node name="Props_Chair_26" parent="Houses Interior/Tables and Chairs" unique_id=1554423094 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.33380687, 0, 0.9426415, 0, 1, 0, -0.9426415, 0, -0.33380687, -2004.8131, 6.326145, 1324.2003)
+transform = Transform3D(-0.8881445, 0, -0.45956442, 0, 1, 0, 0.45956442, 0, -0.8881445, -2004.3088, 6.326145, 1316.9286)
 
 [node name="Props_Chair_27" parent="Houses Interior/Tables and Chairs" unique_id=798597299 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.54463905, 0, -0.83867073, 0, 1, 0, 0.83867073, 0, 0.54463905, -2010.3239, 5.9866157, 1315.2012)
+transform = Transform3D(0.85923684, 0, 0.51157814, 0, 1, 0, -0.51157814, 0, 0.85923684, -2013.707, 5.9866157, 1321.8948)
 
-[node name="Props_Table_Square_12" parent="Houses Interior/Tables and Chairs" unique_id=2090409870 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.28475165, 0, -0.95860136, 0, 1, 0, 0.95860136, 0, 0.28475165, -2030.0825, 3.5796108, 1267.1814)
+[node name="Props_Table_Square_12" parent="Houses Interior/Tables and Chairs" unique_id=775555221 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.3452163, 0, 0.93852305, 0, 1, 0, -0.93852305, 0, -0.3452163, -2031.1177, 3.829342, 1265.3724)
 
-[node name="Props_Chair_28" parent="Houses Interior/Tables and Chairs" unique_id=591468115 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.28475168, 0, -0.9586014, 0, 1, 0, 0.9586014, 0, 0.28475168, -2031.323, 3.2488914, 1261.7125)
+[node name="Props_Chair_28" parent="Houses Interior/Tables and Chairs" unique_id=271404547 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.34521636, 0, 0.93852305, 0, 1, 0, -0.93852305, 0, -0.34521636, -2029.5317, 3.0923944, 1270.7513)
 
-[node name="Props_Chair_29" parent="Houses Interior/Tables and Chairs" unique_id=1035777763 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.98148036, 0, 0.19156283, 0, 1, 0, -0.19156283, 0, 0.98148036, -2035.0364, 3.253315, 1269.1569)
+[node name="Props_Chair_29" parent="Houses Interior/Tables and Chairs" unique_id=1594067905 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.94225055, 0, -0.33490896, 0, 1, 0, 0.33490896, 0, -0.94225055, -2025.7441, 3.503046, 1264.1771)
 
-[node name="Props_Chair_30" parent="Houses Interior/Tables and Chairs" unique_id=74808696 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.90964264, 0, -0.41539195, 0, 1, 0, 0.41539195, 0, -0.90964264, -2025.3247, 2.9137855, 1265.0293)
+[node name="Props_Chair_30" parent="Houses Interior/Tables and Chairs" unique_id=1076085744 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9206616, 0, 0.39036164, 0, 1, 0, -0.39036164, 0, 0.9206616, -2035.7289, 3.1635165, 1267.8232)
 
-[node name="Props_Table_Square_13" parent="Houses Interior/Tables and Chairs" unique_id=1584655741 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.3071905, 0, -0.95164806, 0, 1, 0, 0.95164806, 0, 0.3071905, -2051.8562, 3.556899, 1218.8353)
+[node name="Props_Table_Square_13" parent="Houses Interior/Tables and Chairs" unique_id=49936367 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.28329572, 0, 0.9590326, 0, 1, 0, -0.9590326, 0, -0.28329572, -2050.8494, 3.829342, 1217.0503)
 
-[node name="Props_Chair_31" parent="Houses Interior/Tables and Chairs" unique_id=917041405 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.30719048, 0, -0.951648, 0, 1, 0, 0.951648, 0, 0.30719048, -2053.225, 3.2261796, 1213.397)
+[node name="Props_Chair_31" parent="Houses Interior/Tables and Chairs" unique_id=49022543 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.2832958, 0, 0.9590326, 0, 1, 0, -0.9590326, 0, -0.2832958, -2049.6174, 3.0923944, 1222.5212)
 
-[node name="Props_Chair_32" parent="Houses Interior/Tables and Chairs" unique_id=665361859 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9767098, 0, 0.21456483, 0, 1, 0, -0.21456483, 0, 0.9767098, -2056.7625, 3.2306032, 1220.9266)
+[node name="Props_Chair_32" parent="Houses Interior/Tables and Chairs" unique_id=419378988 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9620801, 0, -0.27276725, 0, 1, 0, 0.27276725, 0, -0.9620801, -2045.4094, 3.503046, 1216.2079)
 
-[node name="Props_Chair_33" parent="Houses Interior/Tables and Chairs" unique_id=1223313573 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.8996342, 0, -0.43664473, 0, 1, 0, 0.43664473, 0, -0.8996342, -2047.1504, 2.8910737, 1216.572)
+[node name="Props_Chair_33" parent="Houses Interior/Tables and Chairs" unique_id=2027572558 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.94415236, 0, 0.32950944, 0, 1, 0, -0.32950944, 0, 0.94415236, -2055.6106, 3.1635165, 1219.1953)
 
-[node name="Props_Table_Square_15" parent="Houses Interior/Tables and Chairs" unique_id=450492424 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.3018541, 0, -0.95335424, 0, 1, 0, 0.95335424, 0, 0.3018541, -2066.8774, 3.556899, 1171.4778)
+[node name="Props_Table_Square_14" parent="Houses Interior/Tables and Chairs" unique_id=851116696 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.31253392, 0, 0.9499066, 0, 1, 0, -0.9499066, 0, -0.31253392, -2065.089, 3.829342, 1166.4724)
 
-[node name="Props_Chair_37" parent="Houses Interior/Tables and Chairs" unique_id=196083772 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.30185413, 0, -0.95335424, 0, 1, 0, 0.95335424, 0, 0.30185413, -2068.2156, 3.2261796, 1166.0319)
+[node name="Props_Chair_34" parent="Houses Interior/Tables and Chairs" unique_id=805325507 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.312534, 0, 0.9499065, 0, 1, 0, -0.9499065, 0, -0.312534, -2063.6902, 3.0923944, 1171.9031)
 
-[node name="Props_Chair_38" parent="Houses Interior/Tables and Chairs" unique_id=1414592733 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9778965, 0, 0.20908946, 0, 1, 0, -0.20908946, 0, 0.9778965, -2071.7952, 3.2306032, 1173.5413)
+[node name="Props_Chair_35" parent="Houses Interior/Tables and Chairs" unique_id=435956258 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9532751, 0, -0.30210373, 0, 1, 0, 0.30210373, 0, -0.9532751, -2059.6775, 3.503046, 1165.4639)
 
-[node name="Props_Chair_39" parent="Houses Interior/Tables and Chairs" unique_id=902506220 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.90206635, 0, -0.4315977, 0, 1, 0, 0.4315977, 0, -0.90206635, -2062.159, 2.8910737, 1169.2406)
+[node name="Props_Chair_36" parent="Houses Interior/Tables and Chairs" unique_id=487157250 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.933618, 0, 0.35827026, 0, 1, 0, -0.35827026, 0, 0.933618, -2069.7822, 3.1635165, 1168.7623)
 
-[node name="Props_Table_Square_16" parent="Houses Interior/Tables and Chairs" unique_id=879799759 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.32452834, 0, -0.945876, 0, 1, 0, 0.945876, 0, 0.32452834, -2079.4702, 3.556899, 1119.4038)
+[node name="Props_Table_Square_15" parent="Houses Interior/Tables and Chairs" unique_id=562892336 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.31253392, 0, 0.9499066, 0, 1, 0, -0.9499066, 0, -0.31253392, -2080.349, 3.829342, 1118.5747)
 
-[node name="Props_Chair_40" parent="Houses Interior/Tables and Chairs" unique_id=666483946 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.3245284, 0, -0.945876, 0, 1, 0, 0.945876, 0, 0.3245284, -2080.938, 3.2261796, 1113.9915)
+[node name="Props_Chair_37" parent="Houses Interior/Tables and Chairs" unique_id=677223244 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.312534, 0, 0.9499065, 0, 1, 0, -0.9499065, 0, -0.312534, -2078.9502, 3.0923944, 1124.0054)
 
-[node name="Props_Chair_41" parent="Houses Interior/Tables and Chairs" unique_id=566058170 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.97262603, 0, 0.2323761, 0, 1, 0, -0.2323761, 0, 0.97262603, -2084.3372, 3.2306032, 1121.5841)
+[node name="Props_Chair_38" parent="Houses Interior/Tables and Chairs" unique_id=1117816645 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9532751, 0, -0.30210373, 0, 1, 0, 0.30210373, 0, -0.9532751, -2074.9375, 3.503046, 1117.5662)
 
-[node name="Props_Chair_42" parent="Houses Interior/Tables and Chairs" unique_id=1520307442 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.8915053, 0, -0.45301056, 0, 1, 0, 0.45301056, 0, -0.8915053, -2074.8064, 2.8910737, 1117.0547)
+[node name="Props_Chair_39" parent="Houses Interior/Tables and Chairs" unique_id=1812831646 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.933618, 0, 0.35827026, 0, 1, 0, -0.35827026, 0, 0.933618, -2085.0422, 3.1635165, 1120.8646)
 
-[node name="Props_Table_Square_17" parent="Houses Interior/Tables and Chairs" unique_id=1383101337 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.21620104, 0, -0.9763489, 0, 1, 0, 0.9763489, 0, 0.21620104, -2093.6663, 3.556899, 1072.1145)
+[node name="Props_Table_Square_16" parent="Houses Interior/Tables and Chairs" unique_id=1811160965 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.19707565, 0, 0.9803883, 0, 1, 0, -0.9803883, 0, -0.19707565, -2094.4993, 3.829342, 1070.5024)
 
-[node name="Props_Chair_43" parent="Houses Interior/Tables and Chairs" unique_id=733591923 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.21620108, 0, -0.97634894, 0, 1, 0, 0.97634894, 0, 0.21620108, -2094.5166, 3.2261796, 1066.5715)
+[node name="Props_Chair_40" parent="Houses Interior/Tables and Chairs" unique_id=192441455 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.19707575, 0, 0.9803882, 0, 1, 0, -0.9803882, 0, -0.19707575, -2093.7578, 3.0923944, 1076.0612)
 
-[node name="Props_Chair_44" parent="Houses Interior/Tables and Chairs" unique_id=1086696719 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.99257594, 0, 0.12162681, 0, 1, 0, -0.12162681, 0, 0.99257594, -2098.7473, 3.2306032, 1073.7341)
+[node name="Props_Chair_41" parent="Houses Interior/Tables and Chairs" unique_id=297659289 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.98248947, 0, -0.18631831, 0, 1, 0, 0.18631831, 0, -0.98248947, -2089.006, 3.503046, 1070.1461)
 
-[node name="Props_Chair_45" parent="Houses Interior/Tables and Chairs" unique_id=1019211251 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.9367579, 0, -0.34997842, 0, 1, 0, 0.34997842, 0, -0.9367579, -2088.768, 2.8910737, 1070.3043)
+[node name="Props_Chair_42" parent="Houses Interior/Tables and Chairs" unique_id=2075189117 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9696677, 0, 0.24442753, 0, 1, 0, -0.24442753, 0, 0.9696677, -2099.432, 3.1635165, 1072.2167)
 
-[node name="Props_Table_Square_18" parent="Houses Interior/Tables and Chairs" unique_id=315563133 instance=ExtResource("14_a4shm")]
-transform = Transform3D(0.108050935, -0.0029845086, -0.99414086, 0.0003224804, 0.9999955, -0.0029670354, 0.99414533, 0, 0.10805142, -2103.2537, 4.8595943, 1016.6046)
+[node name="Props_Table_Square_17" parent="Houses Interior/Tables and Chairs" unique_id=869052006 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.19707565, 0, 0.9803883, 0, 1, 0, -0.9803883, 0, -0.19707565, -2094.4993, 3.829342, 1071.6251)
 
-[node name="Props_Chair_46" parent="Houses Interior/Tables and Chairs" unique_id=701004351 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.10805099, -0.0029845084, -0.99414086, 0.00032248057, 0.9999955, -0.0029670356, 0.99414533, 0, 0.10805147, -2103.4912, 4.5281644, 1011.00183)
+[node name="Props_Chair_43" parent="Houses Interior/Tables and Chairs" unique_id=1238384541 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.19707575, 0, 0.9803882, 0, 1, 0, -0.9803882, 0, -0.19707575, -2093.7578, 3.0923944, 1077.1838)
 
-[node name="Props_Chair_47" parent="Houses Interior/Tables and Chairs" unique_id=165718793 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.99992025, -0.0029845086, 0.012269323, 0.002984284, 0.9999955, 3.6618065e-05, -0.012269378, 0, 0.9999247, -2108.4805, 4.5176973, 1017.6583)
+[node name="Props_Chair_44" parent="Houses Interior/Tables and Chairs" unique_id=1920227922 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.98248947, 0, -0.18631831, 0, 1, 0, 0.18631831, 0, -0.98248947, -2089.006, 3.503046, 1071.2688)
 
-[node name="Props_Chair_48" parent="Houses Interior/Tables and Chairs" unique_id=1183435100 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.96942824, -0.0029845086, -0.245357, -0.00289328, 0.9999955, -0.0007322734, 0.24535811, 0, -0.9694326, -2098.1848, 4.208894, 1015.34125)
+[node name="Props_Chair_45" parent="Houses Interior/Tables and Chairs" unique_id=1920381530 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9696677, 0, 0.24442753, 0, 1, 0, -0.24442753, 0, 0.9696677, -2099.432, 3.1635165, 1073.3394)
 
-[node name="Props_Table_Square_19" parent="Houses Interior/Tables and Chairs" unique_id=294208304 instance=ExtResource("14_a4shm")]
-transform = Transform3D(-0.11476377, 0, -0.9933928, 0, 1, 0, 0.9933928, 0, -0.11476377, -2099.3274, 6.0925074, 955.70715)
+[node name="Props_Table_Square_18" parent="Houses Interior/Tables and Chairs" unique_id=1658759589 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.07741513, 0, 0.99699897, 0, 1, 0, -0.99699897, 0, -0.07741513, -2099.9314, 3.829342, 1012.76434)
 
-[node name="Props_Chair_49" parent="Houses Interior/Tables and Chairs" unique_id=375723015 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.1147638, 0, -0.9933929, 0, 1, 0, 0.9933929, 0, -0.1147638, -2098.3193, 5.761788, 950.1907)
+[node name="Props_Chair_46" parent="Houses Interior/Tables and Chairs" unique_id=428079759 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.07741524, 0, 0.996999, 0, 1, 0, -0.996999, 0, -0.07741524, -2099.8657, 3.0923944, 1018.3718)
 
-[node name="Props_Chair_50" parent="Houses Interior/Tables and Chairs" unique_id=2128379053 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.9778198, 0, -0.20944795, 0, 1, 0, 0.20944795, 0, 0.9778198, -2104.6587, 5.7662115, 955.5772)
+[node name="Props_Chair_47" parent="Houses Interior/Tables and Chairs" unique_id=1360166379 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9977876, 0, -0.0664829, 0, 1, 0, 0.0664829, 0, -0.9977876, -2094.4353, 3.503046, 1013.073)
 
-[node name="Props_Chair_51" parent="Houses Interior/Tables and Chairs" unique_id=1415839804 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.9996973, 0, -0.024606556, 0, 1, 0, 0.024606556, 0, -0.9996973, -2094.1064, 5.426682, 955.5971)
+[node name="Props_Chair_48" parent="Houses Interior/Tables and Chairs" unique_id=46571002 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9920667, 0, 0.12571424, 0, 1, 0, -0.12571424, 0, 0.9920667, -2105.035, 3.1635165, 1013.8712)
 
-[node name="Props_Table_Square_20" parent="Houses Interior/Tables and Chairs" unique_id=1738435537 instance=ExtResource("14_a4shm")]
-transform = Transform3D(-0.44830516, 0, -0.8938806, 0, 1, 0, 0.8938806, 0, -0.44830516, -2085.2732, 6.0925074, 890.7718)
+[node name="Props_Table_Square_19" parent="Houses Interior/Tables and Chairs" unique_id=1625358649 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.10786049, 0, 0.994166, 0, 1, 0, -0.994166, 0, 0.10786049, -2099.6055, 5.363309, 953.9062)
 
-[node name="Props_Chair_52" parent="Houses Interior/Tables and Chairs" unique_id=858602416 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.4483052, 0, -0.89388067, 0, 1, 0, 0.89388067, 0, -0.4483052, -2082.4355, 5.761788, 885.93494)
+[node name="Props_Chair_49" parent="Houses Interior/Tables and Chairs" unique_id=1613344821 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.10786039, 0, 0.994166, 0, 1, 0, -0.994166, 0, 0.10786039, -2100.5757, 4.6263614, 959.4295)
 
-[node name="Props_Chair_53" parent="Houses Interior/Tables and Chairs" unique_id=1566800782 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(0.8467972, 0, -0.53191584, 0, 1, 0, 0.53191584, 0, 0.8467972, -2090.2373, 5.7662115, 888.8223)
+[node name="Props_Chair_50" parent="Houses Interior/Tables and Chairs" unique_id=385302921 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9929241, 0, 0.11875053, 0, 1, 0, -0.11875053, 0, -0.9929241, -2094.2605, 5.037013, 955.2236)
 
-[node name="Props_Chair_54" parent="Houses Interior/Tables and Chairs" unique_id=1672457140 instance=ExtResource("15_j3jmi")]
-transform = Transform3D(-0.94757354, 0, 0.31953824, 0, 1, 0, -0.31953824, 0, -0.94757354, -2080.3308, 5.426682, 892.45795)
+[node name="Props_Chair_51" parent="Houses Interior/Tables and Chairs" unique_id=1228895340 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9982297, 0, -0.059480555, 0, 1, 0, 0.059480555, 0, 0.9982297, -2104.8257, 4.6974835, 954.0524)
+
+[node name="Props_Table_Square_20" parent="Houses Interior/Tables and Chairs" unique_id=200890900 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.4068801, 0, 0.91348165, 0, 1, 0, -0.91348165, 0, 0.4068801, -2083.871, 5.363309, 888.7098)
+
+[node name="Props_Chair_52" parent="Houses Interior/Tables and Chairs" unique_id=2028920018 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.40687996, 0, 0.9134816, 0, 1, 0, -0.9134816, 0, 0.40687996, -2086.4849, 4.6263614, 893.67126)
+
+[node name="Props_Chair_53" parent="Houses Interior/Tables and Chairs" unique_id=1664588974 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9089672, 0, 0.41686785, 0, 1, 0, -0.41686785, 0, -0.9089672, -2079.1855, 5.037013, 891.59937)
+
+[node name="Props_Chair_54" parent="Houses Interior/Tables and Chairs" unique_id=993527577 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9321535, 0, -0.36206388, 0, 1, 0, 0.36206388, 0, 0.9321535, -2088.8857, 4.6974835, 887.2517)
+
+[node name="Props_Table_Square_21" parent="Houses Interior/Tables and Chairs" unique_id=1015020900 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.790187, 0, 0.6128657, 0, 1, 0, -0.6128657, 0, 0.790187, -1967.6708, 5.363309, 860.62244)
+
+[node name="Props_Chair_55" parent="Houses Interior/Tables and Chairs" unique_id=923287296 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.79018706, 0, 0.6128658, 0, 1, 0, -0.6128658, 0, 0.79018706, -1972.3184, 4.6263614, 863.7604)
+
+[node name="Props_Chair_56" parent="Houses Interior/Tables and Chairs" unique_id=1155835758 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.6041681, 0, 0.79685694, 0, 1, 0, -0.79685694, 0, -0.6041681, -1964.9064, 5.037013, 865.38293)
+
+[node name="Props_Chair_57" parent="Houses Interior/Tables and Chairs" unique_id=1518472089 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.65049607, 0, -0.7595099, 0, 1, 0, 0.7595099, 0, 0.65049607, -1971.4015, 4.6974835, 856.96814)
+
+[node name="Props_Table_Square_22" parent="Houses Interior/Tables and Chairs" unique_id=1577008758 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.8258424, 0, 0.5639009, 0, 1, 0, -0.5639009, 0, 0.8258424, -1924.1476, 5.363309, 831.7496)
+
+[node name="Props_Chair_58" parent="Houses Interior/Tables and Chairs" unique_id=131725701 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.8258424, 0, 0.56390095, 0, 1, 0, -0.56390095, 0, 0.8258424, -1928.9766, 4.6263614, 834.60034)
+
+[node name="Props_Chair_59" parent="Houses Interior/Tables and Chairs" unique_id=736979354 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.5548154, 0, 0.83197355, 0, 1, 0, -0.83197355, 0, -0.5548154, -1921.6765, 5.037013, 836.6687)
+
+[node name="Props_Chair_60" parent="Houses Interior/Tables and Chairs" unique_id=1228852586 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.60331947, 0, -0.7974999, 0, 1, 0, 0.7974999, 0, 0.60331947, -1927.6501, 4.6974835, 827.8761)
+
+[node name="Props_Table_Square_23" parent="Houses Interior/Tables and Chairs" unique_id=576323239 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.8812209, 0, 0.47270465, 0, 1, 0, -0.47270465, 0, 0.8812209, -1876.8386, 7.780755, 805.3167)
+
+[node name="Props_Chair_61" parent="Houses Interior/Tables and Chairs" unique_id=2118639442 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.8812209, 0, 0.47270468, 0, 1, 0, -0.47270468, 0, 0.8812209, -1881.9438, 7.0438075, 807.6368)
+
+[node name="Props_Chair_62" parent="Houses Interior/Tables and Chairs" unique_id=1783461814 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.46301764, 0, 0.88634914, 0, 1, 0, -0.88634914, 0, -0.46301764, -1874.9058, 7.454459, 810.4711)
+
+[node name="Props_Chair_63" parent="Houses Interior/Tables and Chairs" unique_id=2032686068 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.5149185, 0, -0.85723937, 0, 1, 0, 0.85723937, 0, 0.5149185, -1879.9086, 7.114929, 801.0921)
+
+[node name="Props_Table_Square_24" parent="Houses Interior/Tables and Chairs" unique_id=181285436 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.9428161, 0, 0.3333133, 0, 1, 0, -0.3333133, 0, 0.9428161, -1822.1953, 7.758423, 781.4108)
+
+[node name="Props_Chair_64" parent="Houses Interior/Tables and Chairs" unique_id=1494575325 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9428161, 0, 0.3333134, 0, 1, 0, -0.3333134, 0, 0.9428161, -1827.5939, 7.0214753, 782.9282)
+
+[node name="Props_Chair_65" parent="Houses Interior/Tables and Chairs" unique_id=1701028413 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.3229595, 0, 0.9464128, 0, 1, 0, -0.9464128, 0, -0.3229595, -1821.0681, 7.432127, 786.79913)
+
+[node name="Props_Chair_66" parent="Houses Interior/Tables and Chairs" unique_id=2093256943 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.37868094, 0, -0.9255274, 0, 1, 0, 0.9255274, 0, 0.37868094, -1824.5878, 7.092597, 776.76886)
+
+[node name="Props_Table_Square_25" parent="Houses Interior/Tables and Chairs" unique_id=1263871306 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.98481077, 0, -0.17363095, 0, 1, 0, 0.17363095, 0, 0.98481077, -1731.1671, 15.555944, 798.8637)
+
+[node name="Props_Chair_67" parent="Houses Interior/Tables and Chairs" unique_id=399453042 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9848108, 0, -0.17363083, 0, 1, 0, 0.17363083, 0, 0.9848108, -1736.6138, 14.818996, 797.52893)
+
+[node name="Props_Chair_68" parent="Houses Interior/Tables and Chairs" unique_id=753765398 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.1844146, 0, 0.9828486, 0, 1, 0, -0.9828486, 0, 0.1844146, -1732.8365, 15.229649, 804.10944)
+
+[node name="Props_Chair_69" parent="Houses Interior/Tables and Chairs" unique_id=243766981 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.12562767, 0, -0.9920775, 0, 1, 0, 0.9920775, 0, -0.12562767, -1730.9664, 14.890119, 793.6453)
+
+[node name="Props_Table_Square_26" parent="Houses Interior/Tables and Chairs" unique_id=1684978203 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.98481077, 0, -0.17363095, 0, 1, 0, 0.17363095, 0, 0.98481077, -1731.1671, 12.954851, 798.8637)
+
+[node name="Props_Chair_70" parent="Houses Interior/Tables and Chairs" unique_id=988811959 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9848108, 0, -0.17363083, 0, 1, 0, 0.17363083, 0, 0.9848108, -1736.6138, 12.217903, 797.52893)
+
+[node name="Props_Chair_71" parent="Houses Interior/Tables and Chairs" unique_id=2036846757 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.1844146, 0, 0.9828486, 0, 1, 0, -0.9828486, 0, 0.1844146, -1732.8365, 12.628555, 804.10944)
+
+[node name="Props_Chair_72" parent="Houses Interior/Tables and Chairs" unique_id=1333731114 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.12562767, 0, -0.9920775, 0, 1, 0, 0.9920775, 0, -0.12562767, -1730.9664, 12.289025, 793.6453)
+
+[node name="Props_Table_Square_27" parent="Houses Interior/Tables and Chairs" unique_id=1276030942 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.86987394, 0, -0.493274, 0, 1, 0, 0.493274, 0, 0.86987394, -1647.5623, 5.8687353, 742.8522)
+
+[node name="Props_Chair_73" parent="Houses Interior/Tables and Chairs" unique_id=2033210120 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.869874, 0, -0.49327388, 0, 1, 0, 0.49327388, 0, 0.869874, -1652.2479, 5.1317873, 739.77124)
+
+[node name="Props_Chair_74" parent="Houses Interior/Tables and Chairs" unique_id=617254748 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.50277865, 0, 0.8644151, 0, 1, 0, -0.8644151, 0, 0.50277865, -1650.8914, 5.5424395, 747.23645)
+
+[node name="Props_Chair_75" parent="Houses Interior/Tables and Chairs" unique_id=1639910266 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.45047247, 0, -0.8927903, 0, 1, 0, 0.8927903, 0, -0.45047247, -1645.6263, 5.2029095, 738.0021)
+
+[node name="Props_Table_Square_28" parent="Houses Interior/Tables and Chairs" unique_id=491854429 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.78712887, 0, 0.6167885, 0, 1, 0, -0.6167885, 0, 0.78712887, -1556.4663, 5.8687353, 760.57056)
+
+[node name="Props_Chair_76" parent="Houses Interior/Tables and Chairs" unique_id=1875619582 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.78712875, 0, 0.6167886, 0, 1, 0, -0.6167886, 0, 0.78712875, -1561.0983, 5.1317873, 763.7317)
+
+[node name="Props_Chair_77" parent="Houses Interior/Tables and Chairs" unique_id=566351330 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.60812414, 0, 0.79384196, 0, 1, 0, -0.79384196, 0, -0.60812414, -1553.6783, 5.5424395, 765.3173)
+
+[node name="Props_Chair_78" parent="Houses Interior/Tables and Chairs" unique_id=1488763436 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.6542657, 0, -0.7562648, 0, 1, 0, 0.7562648, 0, 0.6542657, -1560.2151, 5.2029095, 756.93494)
+
+[node name="Props_Table_Square_29" parent="Houses Interior/Tables and Chairs" unique_id=9457178 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.78712887, 0, 0.6167885, 0, 1, 0, -0.6167885, 0, 0.78712887, -1446.3668, 5.8687353, 791.9217)
+
+[node name="Props_Chair_79" parent="Houses Interior/Tables and Chairs" unique_id=731531797 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.78712875, 0, 0.6167886, 0, 1, 0, -0.6167886, 0, 0.78712875, -1450.9988, 5.1317873, 795.0828)
+
+[node name="Props_Chair_80" parent="Houses Interior/Tables and Chairs" unique_id=892160981 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.60812414, 0, 0.79384196, 0, 1, 0, -0.79384196, 0, -0.60812414, -1443.5789, 5.5424395, 796.66846)
+
+[node name="Props_Chair_81" parent="Houses Interior/Tables and Chairs" unique_id=262173782 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.6542657, 0, -0.7562648, 0, 1, 0, 0.7562648, 0, 0.6542657, -1450.1156, 5.2029095, 788.2861)
+
+[node name="Props_Table_Square_30" parent="Houses Interior/Tables and Chairs" unique_id=1646663072 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.99996775, 0, 0.008045778, 0, 1, 0, -0.008045778, 0, 0.99996775, -1540.308, 5.8687353, 857.51385)
+
+[node name="Props_Chair_82" parent="Houses Interior/Tables and Chairs" unique_id=1494558758 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9999676, 0, 0.008045979, 0, 1, 0, -0.008045979, 0, 0.9999676, -1545.9065, 5.1317873, 857.1902)
+
+[node name="Props_Chair_83" parent="Houses Interior/Tables and Chairs" unique_id=1747226398 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.0029148608, 0, 0.9999957, 0, 1, 0, -0.9999957, 0, 0.0029148608, -1540.9974, 5.5424395, 862.97546)
+
+[node name="Props_Chair_84" parent="Houses Interior/Tables and Chairs" unique_id=1597592322 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.0565707, 0, -0.9983986, 0, 1, 0, 0.9983986, 0, 0.0565707, -1541.058, 5.2029095, 852.3458)
+
+[node name="Props_Table_Square_31" parent="Houses Interior/Tables and Chairs" unique_id=349031142 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.97625077, 0, -0.2166442, 0, 1, 0, 0.2166442, 0, 0.97625077, -1595.1221, 5.8687353, 854.24744)
+
+[node name="Props_Chair_85" parent="Houses Interior/Tables and Chairs" unique_id=1134827100 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.97625065, 0, -0.21664397, 0, 1, 0, 0.21664397, 0, 0.97625065, -1600.505, 5.1317873, 852.6752)
+
+[node name="Props_Chair_86" parent="Houses Interior/Tables and Chairs" unique_id=1449352730 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.22733137, 0, 0.97381735, 0, 1, 0, -0.97381735, 0, 0.22733137, -1597.02, 5.5424395, 859.41486)
+
+[node name="Props_Chair_87" parent="Houses Interior/Tables and Chairs" unique_id=765384667 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.16900557, 0, -0.9856151, 0, 1, 0, 0.9856151, 0, -0.16900557, -1594.6927, 5.2029095, 849.04297)
+
+[node name="Props_Table_Square_32" parent="Houses Interior/Tables and Chairs" unique_id=562765051 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.81806946, 0, -0.5751196, 0, 1, 0, 0.5751196, 0, 0.81806946, -1650.2219, 5.8687353, 831.0083)
+
+[node name="Props_Chair_88" parent="Houses Interior/Tables and Chairs" unique_id=808968429 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.8180695, 0, -0.5751195, 0, 1, 0, 0.5751195, 0, 0.8180695, -1654.5875, 5.1317873, 827.4884)
+
+[node name="Props_Chair_89" parent="Houses Interior/Tables and Chairs" unique_id=468518270 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.58405143, 0, 0.8117165, 0, 1, 0, -0.8117165, 0, 0.58405143, -1653.9596, 5.5424395, 835.0498)
+
+[node name="Props_Chair_90" parent="Houses Interior/Tables and Chairs" unique_id=623660665 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.5347359, 0, -0.84501916, 0, 1, 0, 0.84501916, 0, -0.5347359, -1647.8258, 5.2029095, 826.3683)
+
+[node name="Props_Table_Square_33" parent="Houses Interior/Tables and Chairs" unique_id=2001972380 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.62736523, 0, -0.77872527, 0, 1, 0, 0.77872527, 0, 0.62736523, -1607.1615, 13.084076, 940.73334)
+
+[node name="Props_Chair_91" parent="Houses Interior/Tables and Chairs" unique_id=730042110 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.62736535, 0, -0.7787252, 0, 1, 0, 0.7787252, 0, 0.62736535, -1610.3849, 12.347128, 936.1445)
+
+[node name="Props_Chair_92" parent="Houses Interior/Tables and Chairs" unique_id=1636174233 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.7855545, 0, 0.61879206, 0, 1, 0, -0.61879206, 0, 0.7855545, -1611.8701, 12.75778, 943.5851)
+
+[node name="Props_Chair_93" parent="Houses Interior/Tables and Chairs" unique_id=1560649969 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.7473576, 0, -0.6644219, 0, 1, 0, 0.6644219, 0, -0.7473576, -1603.5768, 12.41825, 936.9358)
+
+[node name="Props_Table_Square_34" parent="Houses Interior/Tables and Chairs" unique_id=1569698307 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.0065449327, 0, -0.9999786, 0, 1, 0, 0.9999786, 0, 0.0065449327, -1715.3986, 13.084076, 977.1653)
+
+[node name="Props_Chair_94" parent="Houses Interior/Tables and Chairs" unique_id=2014320243 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.006545067, 0, -0.9999787, 0, 1, 0, 0.9999787, 0, 0.006545067, -1715.0664, 12.347128, 971.5673)
+
+[node name="Props_Chair_95" parent="Houses Interior/Tables and Chairs" unique_id=1822315782 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.99999, 0, -0.004415855, 0, 1, 0, 0.004415855, 0, 0.99999, -1720.859, 12.75778, 976.4677)
+
+[node name="Props_Chair_96" parent="Houses Interior/Tables and Chairs" unique_id=416155615 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.99848235, 0, -0.055072118, 0, 1, 0, 0.055072118, 0, -0.99848235, -1710.2294, 12.41825, 976.4231)
+
+[node name="Props_Table_Square_35" parent="Houses Interior/Tables and Chairs" unique_id=2068590536 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.04161408, 0, -0.99913377, 0, 1, 0, 0.99913377, 0, 0.04161408, -1849.8339, 13.084076, 977.16455)
+
+[node name="Props_Chair_97" parent="Houses Interior/Tables and Chairs" unique_id=1032143539 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.04161422, 0, -0.9991339, 0, 1, 0, 0.9991339, 0, 0.04161422, -1849.6984, 12.347128, 971.5584)
+
+[node name="Props_Chair_98" parent="Houses Interior/Tables and Chairs" unique_id=571988859 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.99952966, 0, 0.03066044, 0, 1, 0, -0.03066044, 0, 0.99952966, -1855.3154, 12.75778, 976.65894)
+
+[node name="Props_Chair_99" parent="Houses Interior/Tables and Chairs" unique_id=1670962312 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9959365, 0, -0.09005894, 0, 1, 0, 0.09005894, 0, -0.9959365, -1844.694, 12.41825, 976.2415)
+
+[node name="Props_Table_Square_36" parent="Houses Interior/Tables and Chairs" unique_id=2075706458 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.04161408, 0, -0.99913377, 0, 1, 0, 0.99913377, 0, 0.04161408, -1893.5197, 13.084076, 1127.1866)
+
+[node name="Props_Chair_100" parent="Houses Interior/Tables and Chairs" unique_id=1888848459 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.04161422, 0, -0.9991339, 0, 1, 0, 0.9991339, 0, 0.04161422, -1893.3842, 12.347128, 1121.5806)
+
+[node name="Props_Chair_101" parent="Houses Interior/Tables and Chairs" unique_id=12885569 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.99952966, 0, 0.03066044, 0, 1, 0, -0.03066044, 0, 0.99952966, -1899.0012, 12.75778, 1126.681)
+
+[node name="Props_Chair_102" parent="Houses Interior/Tables and Chairs" unique_id=1663271893 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9959365, 0, -0.09005894, 0, 1, 0, 0.09005894, 0, -0.9959365, -1888.3798, 12.41825, 1126.2637)
+
+[node name="Props_Table_Square_37" parent="Houses Interior/Tables and Chairs" unique_id=1418746193 instance=ExtResource("14_a4shm")]
+transform = Transform3D(0.04161408, 0, -0.99913377, 0, 1, 0, 0.99913377, 0, 0.04161408, -1754.0607, 13.084076, 1127.1866)
+
+[node name="Props_Chair_103" parent="Houses Interior/Tables and Chairs" unique_id=549189475 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.04161422, 0, -0.9991339, 0, 1, 0, 0.9991339, 0, 0.04161422, -1753.9252, 12.347128, 1121.5806)
+
+[node name="Props_Chair_104" parent="Houses Interior/Tables and Chairs" unique_id=248564044 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.99952966, 0, 0.03066044, 0, 1, 0, -0.03066044, 0, 0.99952966, -1759.5422, 12.75778, 1126.681)
+
+[node name="Props_Chair_105" parent="Houses Interior/Tables and Chairs" unique_id=155595782 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9959365, 0, -0.09005894, 0, 1, 0, 0.09005894, 0, -0.9959365, -1748.9208, 12.41825, 1126.2637)
+
+[node name="Props_Table_Square_38" parent="Houses Interior/Tables and Chairs" unique_id=596144840 instance=ExtResource("14_a4shm")]
+transform = Transform3D(-0.026386313, 0, -0.99965185, 0, 1, 0, 0.99965185, 0, -0.026386313, -1643.3214, 13.084076, 1127.186)
+
+[node name="Props_Chair_106" parent="Houses Interior/Tables and Chairs" unique_id=1819598212 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.026386183, 0, -0.99965197, 0, 1, 0, 0.99965197, 0, -0.026386183, -1642.8052, 12.347128, 1121.6022)
+
+[node name="Props_Chair_107" parent="Houses Interior/Tables and Chairs" unique_id=324415546 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(0.9993023, 0, -0.03734154, 0, 1, 0, 0.03734154, 0, 0.9993023, -1648.756, 12.75778, 1126.3091)
+
+[node name="Props_Chair_108" parent="Houses Interior/Tables and Chairs" unique_id=633854900 instance=ExtResource("15_j3jmi")]
+transform = Transform3D(-0.9997544, 0, -0.022163816, 0, 1, 0, 0.022163816, 0, -0.9997544, -1638.1307, 12.41825, 1126.6146)
