@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://crql27ji3kqo8"]
 
-[ext_resource type="Script" uid="uid://c5msc5d3pv6po" path="res://main_menu.gd" id="1_txuoj"]
+[ext_resource type="Script" uid="uid://xc16vxm6u7du" path="res://main_menu.gd" id="1_txuoj"]
 [ext_resource type="Texture2D" uid="uid://da745xb4pgnhe" path="res://Gas station.jpg" id="2_nwpmk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_txuoj"]

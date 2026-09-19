@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dylv3wpcb3xug"]
 
-[ext_resource type="Script" uid="uid://dqjbcayqoiiaf" path="res://Leo/controls.gd" id="1_elaq2"]
+[ext_resource type="Script" uid="uid://dqjbcayqoiiaf" path="res://controls.gd" id="1_elaq2"]
 [ext_resource type="Texture2D" uid="uid://da745xb4pgnhe" path="res://Gas station.jpg" id="2_n5wro"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6whpu"]
@@ -19,6 +19,8 @@ offset_left = 86.0
 offset_top = 419.0
 offset_right = 448.0
 offset_bottom = 567.0
+text = "W,A,S,D = Move
+Right click and hold to use flash light."
 
 [node name="Label" type="Label" parent="." unique_id=784894941]
 offset_left = 61.0

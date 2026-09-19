@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://kr7rymoh50ij"]
 
-[ext_resource type="Script" uid="uid://vb33rpyqgvgm" path="res://Leo/credits.gd" id="1_4lcli"]
+[ext_resource type="Script" uid="uid://vb33rpyqgvgm" path="res://credits.gd" id="1_4lcli"]
 [ext_resource type="Texture2D" uid="uid://da745xb4pgnhe" path="res://Gas station.jpg" id="2_mwlco"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hkejs"]
@@ -32,9 +32,14 @@ text = "Back"
 
 [node name="TextEdit2" type="TextEdit" parent="." unique_id=2052571296]
 offset_left = 73.0
-offset_top = 436.0
-offset_right = 435.0
-offset_bottom = 584.0
+offset_top = 339.0
+offset_right = 438.0
+offset_bottom = 511.0
+text = "Static on Route 12 is a game created by Leo and Cohen.
+Textures from Textures.com.
+Some designs from Itch.
+Thanks you for everyone who helped make the game"
+wrap_mode = 1
 
 [node name="Label" type="Label" parent="." unique_id=2096375799]
 offset_left = 61.0
