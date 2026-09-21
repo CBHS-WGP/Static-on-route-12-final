@@ -19,7 +19,9 @@
 [ext_resource type="Script" uid="uid://c7jid1fry27sg" path="res://Cohen/Timer.gd" id="17_a4shm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ej4lr"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_top_color = Color(0.16759321, 0.08583517, 0, 1)
+sky_horizon_color = Color(0.14406255, 0.14406255, 0.14406255, 1)
+ground_bottom_color = Color(0.26293245, 0.26293245, 0.26293245, 1)
 ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
 
 [sub_resource type="Sky" id="Sky_kua5i"]
@@ -28,7 +30,8 @@ sky_material = SubResource("ProceduralSkyMaterial_ej4lr")
 [sub_resource type="Environment" id="Environment_33h8q"]
 background_mode = 2
 sky = SubResource("Sky_kua5i")
-ambient_light_sky_contribution = 0.5
+sky_rotation = Vector3(0, 0, 3.1415927)
+ambient_light_sky_contribution = 0.1
 tonemap_mode = 2
 glow_enabled = true
 
@@ -161,8 +164,9 @@ texture_filter = 4
 environment = SubResource("Environment_33h8q")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1819862393]
-transform = Transform3D(-0.59136736, -0.79601306, 0.1290266, -0.51596516, 0.25053924, -0.81915194, 0.61972946, -0.55099297, -0.5588757, 0, 486.79932, 0)
+transform = Transform3D(-0.605747, -0.7890306, -0.10247534, 0.40978903, -0.19898285, -0.89021266, 0.68201435, -0.5812369, 0.44386932, 0, 486.79932, 0)
 shadow_enabled = true
+sky_mode = 2
 
 [node name="Terrain3D" type="Terrain3D" parent="." unique_id=1514673293]
 data_directory = "res://Cohen"
@@ -575,7 +579,6 @@ transform = Transform3D(4.9013567, 0, -0.98828685, 0, 5, 0, 0.98828685, 0, 4.901
 transform = Transform3D(-4.999879, 0, -0.03490615, 0, 5, 0, 0.03490615, 0, -4.999879, -1870.9384, -0.5529976, 1130.9865)
 
 [node name="Trees" type="Node3D" parent="." unique_id=569144170]
-visible = false
 
 [node name="Tree1" parent="Trees" unique_id=2008181010 instance=ExtResource("6_uvyeg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1479.4099, 0.05224514, 587.32007)
@@ -2783,20 +2786,19 @@ offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="ESC/Control" unique_id=49860902]
 layout_mode = 0
-offset_right = 112.0
+offset_left = 1040.0
+offset_right = 1152.0
 offset_bottom = 56.0
 theme_override_font_sizes/font_size = 30
 text = "Exit"
 script = ExtResource("16_ychty")
 
-[node name="Timer" type="Node2D" parent="." unique_id=548429481]
-
-[node name="Button" type="Button" parent="Timer" unique_id=1625557997]
-offset_left = 1008.0
-offset_top = 4.0
-offset_right = 1149.0
-offset_bottom = 51.0
-text = "0:00"
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=267903901]
 script = ExtResource("17_a4shm")
+
+[node name="TimerLabel" type="Label" parent="CanvasLayer" unique_id=1085529405]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Time: 00:00"
 
 [connection signal="pressed" from="ESC/Control/Button" to="ESC/Control/Button" method="_on_pressed"]
