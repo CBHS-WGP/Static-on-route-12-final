@@ -4,12 +4,12 @@ class_name Player
 
 const BASE_SPEED = 20
 const SPRINT_SPEED_MULTIPLIER = 2.0
-const JUMP_VELOCITY = 10
+const JUMP_VELOCITY = 9
 
 
 
 var instance
-var _gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
+var _gravity: float = 25.0
 var _last_step_location := Vector3.ZERO
 @onready var gun_holder = $hand
 @onready var _mouse_sensitivity := 0.15 / (get_viewport().get_visible_rect().size.x/1152.0)
@@ -25,7 +25,7 @@ func _ready():
 func _physics_process(delta):
 	
 	var xz_position := Vector3(global_position.x, 0.0, global_position.z)
-	if _last_step_location.distance_to(xz_position) > 2.0:
+	if _last_step_location.distance_to(xz_position) > 10:
 		_last_step_location = xz_position
 		_step_sound.play()
 	

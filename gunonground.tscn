@@ -10,7 +10,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20751145, 0, 0)
 script = ExtResource("1_ipinc")
 
 [node name="Gun" parent="." unique_id=1995747315 instance=ExtResource("2_ipinc")]
-transform = Transform3D(0.99999994, 0, 0, 0, 1, 0, 0, 0, 0.99999994, -0.57437575, -0.2264753, 0.54362535)
+transform = Transform3D(0.99999994, 0, 0, 0, 0.9795753, 0.20107791, 0, -0.20107792, 0.9795752, -0.57437575, -0.2264753, 0.54362535)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=259102519 groups=["pickable"]]
 transform = Transform3D(0.9912155, -0.13225639, 0, 0.13096927, 0.98156905, -0.1391731, 0.018406533, 0.13795054, 0.99026805, 0, 0, 0)
