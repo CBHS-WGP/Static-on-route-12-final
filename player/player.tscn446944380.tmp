@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dtb7gx3wgqwrf" path="res://player/player.gd" id="2_10sax"]
 [ext_resource type="Script" uid="uid://w42cywlo8tij" path="res://fpc.gd" id="2_g1dw6"]
 [ext_resource type="AudioStream" uid="uid://b7dtejfcwpps4" path="res://sounds/138476__justinvoke__steptap.wav" id="2_ncqi0"]
+[ext_resource type="Script" uid="uid://dkmhpbw0k3p0i" path="res://player/color_rect.gd" id="4_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_bbutj"]
 
@@ -58,3 +59,4 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 6
+script = ExtResource("4_yw30f")

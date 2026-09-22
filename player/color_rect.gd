@@ -2,12 +2,12 @@ extends ColorRect
 
 
  
-var gun = load("res://bullet.tscn")
-var player = load("res://player/player.tscn")
+@onready var gun = load("res://bullet.tscn")
+@onready var player = load("res://player/player.tscn")
 
-@onready var camera = 
+@onready var camera =  $head/Camera3D
 
-@onready var gun_barrel ="res://gun.gd"
+@onready var gun_barrel = get_node("res://gun.gd")
 
 func _process(delta):
 	update_reticle()

@@ -2,9 +2,9 @@ extends CharacterBody3D
 class_name Player
 
 
-const BASE_SPEED = 5.0
+const BASE_SPEED = 20
 const SPRINT_SPEED_MULTIPLIER = 2.0
-const JUMP_VELOCITY = 4.5
+const JUMP_VELOCITY = 10
 
 
 
