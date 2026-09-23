@@ -14,8 +14,8 @@ scale = Vector2(2.25, 2)
 script = ExtResource("1_txuoj")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=217243558]
-offset_right = 1151.0
-offset_bottom = 646.0
+offset_right = 1034.6666
+offset_bottom = 494.5
 texture = ExtResource("2_nwpmk")
 expand_mode = 1
 
@@ -27,41 +27,41 @@ offset_bottom = 40.0
 
 [node name="Start" type="Button" parent="Button_manager" unique_id=942479885]
 layout_mode = 0
-offset_left = 67.0
-offset_top = 401.0
-offset_right = 327.0
-offset_bottom = 445.0
+offset_left = 51.555553
+offset_top = 397.5
+offset_right = 311.55554
+offset_bottom = 441.5
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_txuoj")
 text = "Start"
 
 [node name="Options" type="Button" parent="Button_manager" unique_id=1027035602]
 layout_mode = 0
-offset_left = 69.0
-offset_top = 470.0
-offset_right = 327.0
-offset_bottom = 512.0
+offset_left = 343.55554
+offset_top = 399.0
+offset_right = 601.55554
+offset_bottom = 441.0
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_nwpmk")
 text = "Options"
 
 [node name="Exit" type="Button" parent="Button_manager" unique_id=290168887]
 layout_mode = 0
-offset_left = 71.0
-offset_top = 539.0
-offset_right = 327.0
-offset_bottom = 579.0
+offset_left = 586.6667
+offset_top = 394.5
+offset_right = 842.6667
+offset_bottom = 430.5
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_whimu")
 text = "Exit"
 
 [node name="Label" type="Label" parent="." unique_id=1890651022]
-offset_left = 61.0
-offset_top = 44.0
-offset_right = 1102.0
-offset_bottom = 300.0
+offset_left = 82.666664
+offset_top = 0.5
+offset_right = 1123.6666
+offset_bottom = 256.5
 theme_override_font_sizes/font_size = 66
-text = "Ｓｔａｔｉｃ ｏｎ Ｒｏｕｔｅ １２"
+text = "Static on Route 12"
 
 [connection signal="pressed" from="Button_manager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Button_manager/Options" to="." method="_on_options_pressed"]
