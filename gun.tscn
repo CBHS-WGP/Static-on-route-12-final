@@ -66,4 +66,5 @@ volume_db = 13.483
 one_shot = true
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=297646299]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.55888873, 0.42410654, -0.6305893)
 shape = SubResource("SphereShape3D_kw0bs")

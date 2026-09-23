@@ -1,6 +1,6 @@
 extends CharacterBody3D
 class_name Enemy
-
+@export var gravity := 20.0
 @export var speed := 25
 @export var catching_distance := 1.5
 @export var max_health := 6
