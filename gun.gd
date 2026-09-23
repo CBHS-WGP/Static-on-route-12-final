@@ -12,9 +12,11 @@ var can_shoot := true
 
 
 func _process(_delta):
-	if Input.is_action_pressed("shoot") and can_shoot:
-		shoot()
-
+	var fpc = get_tree().get_first_node_in_group("player")
+	
+	if fpc and fpc.has_picked_up:
+		if Input.is_action_pressed("shoot") and can_shoot:
+			shoot()
 
 func shoot():
 	can_shoot = false

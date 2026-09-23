@@ -6,6 +6,7 @@
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hkejs"]
 
 [node name="Credits" type="Node2D" unique_id=1405947781]
+scale = Vector2(2.25, 2)
 script = ExtResource("1_4lcli")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=643140961]

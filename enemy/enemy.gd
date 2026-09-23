@@ -1,83 +1,90 @@
 extends CharacterBody3D
 class_name Enemy
 
-signal reached_player
-@export var damage = 1
-signal body_part_hit(dam)
+@export var speed := 25
+@export var catching_distance := 1.5
+@export var max_health := 6
+@export var damage := 1
 
-@export var max_spotting_distance := 50.0
-
-var _current_speed := 0.0
-
-var health = 6
-@onready var navigation_agent: NavigationAgent3D = %NavigationAgent3D
-@onready var animation_player: AnimationPlayer = get_node("EnemyModel/AnimationPlayer")
+@onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
+@onready var animation_player: AnimationPlayer = $EnemyModel/AnimationPlayer
 @onready var player: Player = get_tree().get_first_node_in_group("player")
-@onready var _eye: Node3D = %Eye
-@onready var _eye_ray_cast: RayCast3D = %EyeRayCast
 
+var health := max_health
 
 func _ready() -> void:
-	set_physics_process(false)
 	await get_tree().physics_frame
-	set_physics_process(true)
+	await get_tree().physics_frame
+
+	navigation_agent.path_desired_distance = 0.5
+	navigation_agent.target_desired_distance = 1.0
+
+	if player:
+		navigation_agent.target_position = player.global_position
 
 
 func _physics_process(_delta: float) -> void:
-	if navigation_agent.is_navigation_finished():
-		animation_player.play("mixamo_com", 0.2)
+	if player == null:
 		return
-	
-	var next_path_position := navigation_agent.get_next_path_position()
-	
-	var where_to_look := next_path_position
-	where_to_look.y = global_position.y
-	if not where_to_look.is_equal_approx(global_position):
-		
-		look_at(where_to_look)
-	
-	var direction := next_path_position - global_position
+
+	navigation_agent.target_position = player.global_position
+
+	var next_position := navigation_agent.get_next_path_position()
+
+	var direction := next_position - global_position
 	direction.y = 0.0
+
+	if direction.length() < 0.5:
+		direction = player.global_position - global_position
+		direction.y = 0.0
+
+	if direction.length() < 0.1:
+		velocity = Vector3.ZERO
+		return
+
 	direction = direction.normalized()
-	velocity = direction * _current_speed
+
+	velocity = direction * speed
+
+	look_at(global_position + direction, Vector3.UP)
+
 	move_and_slide()
 
-
-func travel_to_position(wanted_position: Vector3, speed: float, play_run_anim := false) -> void:
-	navigation_agent.target_position = wanted_position
-	_current_speed = speed
-	
-	if play_run_anim:
-		animation_player.play("mixamo_com", 0.1)
-	else:
-		animation_player.play("mixamo_com", 0.3)
+	animation_player.play("mixamo_com", 0.1)
 
 
-func is_player_in_view() -> bool:
-	var vec_to_player := (player.global_position - global_position)
-	
-	if vec_to_player.length() > max_spotting_distance:
-		return false
-	
-	var in_fov := -_eye.global_basis.z.normalized().dot(vec_to_player.normalized()) > 0.3
-	
-	if in_fov:
-		return not is_line_of_sight_broken()
-	
-	return false
+func take_damage(amount: int) -> void:
+	health -= amount
+	print("ENEMY HEALTH: ", health)
+
+	if health <= 0:
+		die()
 
 
-func is_line_of_sight_broken() -> bool:
-	_eye_ray_cast.target_position = _eye_ray_cast.to_local(player.global_position)
-	_eye_ray_cast.force_raycast_update()
-	return _eye_ray_cast.is_colliding()
+func hit(amount: int) -> void:
+	take_damage(amount)
 
 
-func _on_skeleton_3d_body_part_hit(dam: Variant) -> void:
-	health -= dam
-	if health <=0:
-		queue_free()
+func die() -> void:
+	var timer = get_tree().get_first_node_in_group("timer")
 
-func hit(dam: Variant) -> void:
-	emit_signal("body_part_hit", dam)	
+	if timer:
+		timer.stop_timer()
+
 	queue_free()
+
+
+func travel_to_position(
+	wanted_position: Vector3,
+	new_speed: float,
+	play_run_anim := false
+) -> void:
+	navigation_agent.target_position = wanted_position
+	speed = new_speed
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.is_in_group("player"):
+		$Scream.play()
+		await get_tree().create_timer(1).timeout
+		get_tree().change_scene_to_file("res://game_over/game_over.tscn")

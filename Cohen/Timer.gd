@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 var start_time: int
+var timer_running := true
 
 @onready var timer_label = $TimerLabel
 
@@ -9,6 +10,9 @@ func _ready():
 	timer_label.text = "00:00.000"
 
 func _process(_delta):
+	if not timer_running:
+		return
+
 	var elapsed = Time.get_ticks_msec() - start_time
 
 	var minutes = elapsed / 60000
@@ -16,3 +20,7 @@ func _process(_delta):
 	var milliseconds = elapsed % 1000
 
 	timer_label.text = "%02d:%02d.%03d" % [minutes, seconds, milliseconds]
+
+
+func stop_timer():
+	timer_running = false

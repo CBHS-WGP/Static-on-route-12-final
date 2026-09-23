@@ -11,7 +11,7 @@ var sens = 0.12
 
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-
+	
 
 func _process(delta):
 	
@@ -30,7 +30,7 @@ func _process(delta):
 				object.position = Vector3.ZERO
 				object.rotation = Vector3.ZERO
 				object.scale = Vector3.ONE
-
+				ch3d.has_picked_up = true
 func _input(event):
 	if event is InputEventMouseMotion:
 
