@@ -10,26 +10,27 @@ scale = Vector2(2.25, 2)
 script = ExtResource("1_elaq2")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=383990477]
-offset_right = 1151.0
-offset_bottom = 646.0
+offset_right = 1069.7778
+offset_bottom = 522.5
 texture = ExtResource("2_n5wro")
 expand_mode = 1
 
 [node name="TextEdit2" type="TextEdit" parent="." unique_id=1371572530]
-offset_left = 86.0
-offset_top = 419.0
-offset_right = 448.0
-offset_bottom = 567.0
+offset_left = 28.888885
+offset_top = 347.0
+offset_right = 390.88885
+offset_bottom = 495.0
 text = "W,A,S,D = Move
-Right click and hold to use flash light."
+Shift to Sprint lasting 7 seconds
+Flashlight = F"
 
 [node name="Label" type="Label" parent="." unique_id=784894941]
-offset_left = 61.0
-offset_top = 44.0
-offset_right = 1102.0
-offset_bottom = 300.0
+offset_left = 163.55556
+offset_top = -1.5
+offset_right = 1204.5555
+offset_bottom = 89.5
 theme_override_font_sizes/font_size = 66
-text = "Ｓｔａｔｉｃ ｏｎ Ｒｏｕｔｅ １２"
+text = "Static on Route 12"
 
 [node name="Control" type="Control" parent="." unique_id=460743735]
 layout_mode = 3
@@ -39,10 +40,10 @@ offset_bottom = 40.0
 
 [node name="Back" type="Button" parent="Control" unique_id=9249684]
 layout_mode = 0
-offset_left = -90.0
-offset_top = 215.0
-offset_right = 170.0
-offset_bottom = 259.0
+offset_left = -74.666664
+offset_top = 127.5
+offset_right = 185.33334
+offset_bottom = 171.5
 theme_override_font_sizes/font_size = 26
 theme_override_styles/normal = SubResource("StyleBoxEmpty_6whpu")
 text = "Back"
