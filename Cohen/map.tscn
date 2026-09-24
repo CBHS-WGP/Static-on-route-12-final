@@ -156,7 +156,7 @@ sky_rotation = Vector3(0, 0, 3.1415927)
 ambient_light_sky_contribution = 0.29
 ambient_light_energy = 0.28
 tonemap_mode = 2
-tonemap_exposure = 2.45
+tonemap_exposure = 0.19
 ssr_depth_tolerance = 0.01
 glow_enabled = true
 glow_normalized = true
@@ -265,7 +265,7 @@ text = "Time: 00:00"
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -1496.5614, 5.2524276, 681.0182)
 
 [node name="Enemy" parent="." unique_id=752862460 instance=ExtResource("19_nir6e")]
-transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -1572.3624, 1.020709, 1216.3022)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -1510.7036, 1.020709, 838.67444)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1819862393]
 transform = Transform3D(-0.605747, -0.7890307, -0.10247537, 0.409789, -0.19898288, -0.89021283, 0.68201435, -0.581237, 0.44386935, 0, 486.79932, 0)
